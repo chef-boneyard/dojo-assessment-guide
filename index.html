@@ -236,6 +236,20 @@
               <li>Monitoring is integrated with CI, providing awareness of each deployment's effect on system health.</li>
             </ol>
           </section>
+
+          <section>
+            <h3>Chef Code Deployment</h3>
+            <ol>
+              <li>CI Pipelines automatically upload cookbooks to a Chef server.</li>
+              <li>Cookbook updates are only be uploaded via CI.</li>
+              <li>All non-cookbook Chef policy (environments, roles, data bags, etc.) are only uploaded via CI.</li>
+              <li>CI code pins dependencies so that they cannot be modified in later deployments.</li>
+              <li>CI code assigns a set of cookbook versions to a Chef environment.</li>
+              <li>Cookbook deployments are automated.</li>
+              <li>Cookbook deployment automation manages the sequence of deployments.</li>
+            </ol>
+          </section>
+        </section>
         </section>
 
 				<section>
