@@ -297,6 +297,21 @@
               <li>Every change to an application is committed to VCS, verified by CI, and (provided all checks pass) automatically deployed to production.</li>
             </ol>
           </section>
+
+          <section>
+            <h3>Sustaining Operations Culture</h3>
+            <ol>
+              <li>The codebase is almost always in a releasable state.</li>
+              <li>Compliance is checked automatically.</li>
+              <li>Compliance enforcing automation removed non-compliant nodes from production upon detection.</li>
+              <li>Nodes are destroyed beyond a certain age (e.g. 30 days).</li>
+              <li>Automated services stress the production system (e.g. Chaos Monkey).</li>
+              <li>The entire application is test deployed/provisioned in an alternate datacenter.</li>
+              <li>When prodution alerts are triggered, those who wrote the code are notified first.</li>
+              <li>Operations, Security, Network, Automation, Testing, and Compliance experts provide tools and coaching to enable development teams.</li>
+              <li>Operations, Security, Network, Automation, Testing, and Compliance experts are available to support development teams in issue resolution.</li>
+            </ol>
+          </section>
         </section>
 
 				<section>
