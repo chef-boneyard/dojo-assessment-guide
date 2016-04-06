@@ -217,6 +217,25 @@
               <li>Developers run Test Kitchen to verify that cookbooks provide the desired functionality.</li>
             </ol>
           </section>
+
+          <section>
+            <h3>Continuous Integration</h3>
+            <ol>
+              <li>All projects use a CI service.</li>
+              <li>The CI service can test multiple branches of the same project.</li>
+              <li>The CI service automatically tests all new branches.</li>
+              <li>CI job templates have been defined for each type of software project (Chef cookbook, Java app servers, Node.js app, etc.).</li>
+              <li>CI job templates include code analysis stages: linting, code coverage, complexity, etc.</li>
+              <li>CI job templates include a unit testing stage.</li>
+              <li>CI job templates include an integration testing stage.</li>
+              <li>CI job templates include a functional testing stage.</li>
+              <li>Your CI tool makes the quality of your code base highly visible.</li>
+              <li>CI enforces code quality standards for each type of software project.</li>
+              <li>CI confirms that versions are unique.</li>
+              <li>CI tools automatically update cookbook dependencies at the start of a run.</li>
+              <li>Monitoring is integrated with CI, providing awareness of each deployment's effect on system health.</li>
+            </ol>
+          </section>
         </section>
 
 				<section>
