@@ -195,23 +195,23 @@
               <li>All source code is stored in a version control system (VCS)</li>
               <li>All infrastructure and deployment automation code stored in a VCS</li>
               <li>Software and automation components are shared and co-developed</li>
-              <li>Developers can view projects in VCS with few obstacles</li>
-              <li>Developers suggest and/or provide changes to a project in VCS</li>
-              <li>Developers develop and ship code for projects in VCS with few hurdles.</li>
+              <li>Developers can view projects in VCS with ease</li>
+              <li>Developers suggest and/or provide changes to projects in VCS</li>
+              <li>Developers develop and ship code for projects in VCS with few hurdles</li>
               <li>New projects are created in VCS with ease</li>
               <li>VCS makes code/project ownership and documentation clear</li>
-              <li>All code documentation is easy to write and is viewable by all with VCS access</li>
+              <li>Code documentation is easy to write and is viewable by all with VCS access</li>
             </ol>
           </section>
 
           <section>
             <h3>Chef Local Development</h3>
             <ol>
-              <li>Developers provision VMs that are completely isolated to each developer as needed</li>
+              <li>Developers provision their own isolated VMs as needed</li>
               <li>Developers install Chef development tools (ChefDK, vagrant, etc)</li>
               <li>Chef Development workstation setup is automated</li>
               <li>Developers download code dependencies in a friction-free manner</li>
-              <li>You use Vagrant boxes (or VM Images) which closely resemble your production systems</li>
+              <li>Developers use Vagrant boxes (or VM Images) which closely resemble production systems</li>
               <li>Developers run unit tests (ChefSpec) locally</li>
               <li>Developers run functional tests (ServerSpec) locally</li>
               <li>Developers run Test Kitchen to verify that cookbooks provide the desired functionality</li>
@@ -225,7 +225,7 @@
               <li>The CI service can test multiple branches of the same project</li>
               <li>The CI service automatically tests all new branches</li>
               <li>CI job templates have been defined for each type of software project (Chef cookbook, Java app servers, Node.js app, etc.)</li>
-              <li>CI job templates include code analysis stages: linting, code coverage, complexity, etc</li>
+              <li>CI job templates include a code analysis stage (linting, code coverage, complexity, etc.)</li>
               <li>CI job templates include a unit testing stage</li>
               <li>CI job templates include an integration testing stage</li>
               <li>CI job templates include a functional testing stage</li>
@@ -240,11 +240,11 @@
           <section>
             <h3>Chef Code Deployment</h3>
             <ol>
-              <li>CI Pipelines automatically upload cookbooks to a Chef server</li>
+              <li>CI jobs upload cookbooks to a Chef server</li>
               <li>Cookbook updates are only be uploaded via CI</li>
               <li>All non-cookbook Chef policy (environments, roles, data bags, etc.) are only uploaded via CI</li>
-              <li>CI code pins dependencies so that they cannot be modified in later deployments</li>
-              <li>CI code assigns a set of cookbook versions to a Chef environment</li>
+              <li>CI jobs pin dependencies so that they cannot be modified in later deployments</li>
+              <li>CI jobs assign a set of cookbook versions to a Chef environment</li>
               <li>Cookbook deployments are automated</li>
               <li>Cookbook deployment automation manages the sequence of deployments</li>
             </ol>
@@ -264,12 +264,12 @@
           <section>
             <h3>Virtualizaton as a Service</h3>
             <ol>
-              <li>All servers are provisioned APIs</li>
-              <li>The API is a generally accepted one such as EC2, Azure, OpenStack, vSphere, Docker</li>
+              <li>All servers are provisioned via APIs</li>
+              <li>The API is a generally accepted API such as EC2, Azure, OpenStack, vSphere, Docker</li>
               <li>Access restrictions allow authorized users (e.g., developers and operations) to provision resources, and deny unauthorized users</li>
               <li>Resources are provisioned in a friction-free manner</li>
               <li>System images are built via an automated process</li>
-              <li>System images are built from scratch or from a well known and trusted origin</li>
+              <li>System images are built from scratch or from a well known, trusted origin</li>
               <li>System images are built in a pipeline</li>
               <li>System images are freqently updated</li>
             </ol>
@@ -294,7 +294,7 @@
               <li>All validation and deployments are executed in a pipeline that goes from source control all the way to production</li>
               <li>Small batches of work flow through the pipeline</li>
               <li>Changes are released weekly, if not more frequently</li>
-              <li>Every change to an application is committed to VCS, verified by CI, and (provided all checks pass) automatically deployed to production</li>
+              <li>Changes that pass validation are automatically released to production</li>
             </ol>
           </section>
 
@@ -303,11 +303,11 @@
             <ol>
               <li>The codebase is almost always in a releasable state</li>
               <li>Compliance is checked automatically</li>
-              <li>Compliance enforcing automation removed non-compliant nodes from production upon detection</li>
+              <li>Compliance automation removes non-compliant nodes from production upon detection</li>
               <li>Nodes are destroyed beyond a certain age (e.g. 30 days)</li>
               <li>Automated services stress the production system (e.g. Chaos Monkey)</li>
-              <li>The entire application is test deployed/provisioned in an alternate datacenter</li>
-              <li>When prodution alerts are triggered, those who wrote the code are notified first</li>
+              <li>The entire application is test provisioned and deployed in an alternate datacenter</li>
+              <li>Prodution alerts first notify those who wrote the code</li>
               <li>Operations, Security, Network, Automation, Testing, and Compliance experts provide tools and coaching to enable development teams</li>
               <li>Operations, Security, Network, Automation, Testing, and Compliance experts are available to support development teams in issue resolution</li>
             </ol>
