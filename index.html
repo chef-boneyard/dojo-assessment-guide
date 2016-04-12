@@ -221,18 +221,17 @@
             <h3>Continuous Integration</h3>
             <ol>
               <li>All projects use a CI service</li>
-              <li>The CI service can test multiple branches of the same project</li>
-              <li>The CI service automatically tests all new branches</li>
-              <li>CI job templates have been defined for each type of software project (Chef cookbook, Java app servers, Node.js app, etc.)</li>
-              <li>CI job templates include a code analysis stage (linting, code coverage, complexity, etc.)</li>
+              <li>CI automatically tests new branches</li>
+              <li>CI job templates exist for each type of software project (Chef cookbook, Java app servers, Node.js app, etc.)</li>
+              <li>CI job templates include a linting stage</li>
               <li>CI job templates include a unit testing stage</li>
               <li>CI job templates include an integration testing stage</li>
               <li>CI job templates include a functional testing stage</li>
-              <li>The CI tool makes the quality of the code base highly visible</li>
-              <li>CI enforces code quality standards for each type of software project</li>
+              <li>CI job templates include a complaince testing stage</li>
+              <li>CI makes the quality of the code base highly visible</li>
               <li>CI confirms that versions are unique</li>
-              <li>CI tools automatically update cookbook dependencies at the start of a run</li>
-              <li>Monitoring is integrated with CI, providing awareness of each deployment's effect on system health</li>
+              <li>CI jobs automatically update dependencies</li>
+              <li>CI jobs use monitoring to assess each change's effect on system health</li>
             </ol>
           </section>
 
