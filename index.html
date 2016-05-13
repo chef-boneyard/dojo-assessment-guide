@@ -4,7 +4,7 @@
 	<head>
 		<meta charset="utf-8">
 
-		<title>Chef DOJO Facilitator's Guide</title>
+		<title>Chef DOJO</title>
 
 		<meta name="description" content="The Chef DevOps Journey Assessment tool">
 		<meta name="author" content="Irving Popovetsky">
@@ -44,237 +44,274 @@
 				<section data-background="images/shaolin-masters.jpg">
 					<div class="see-through">
 						<h1>Chef DOJO</h1>
-						<h3>DevOps Journey Overview</h3>
-						<p>
-							<small>Facilitator's Guide</small>
-						</p>
+						<h3>DevOps Journey</h3>
 					</div>
 				</section>
 
 				<section>
 					<h1>Agenda</h1>
-					<p>
-						<ol>
-							<li>The DevOps Journey Map</li>
-							<li>Wisdom for Facilitators</li>
-							<li>Organizational Success Factors</li>
-							<li>Local Development</li>
-							<li>Code Collaboration</li>
-							<li>Continuous Integration</li>
-							<li>Chef Code Deployment</li>
-							<li>Application Deployment</li>
-							<li>Virtualization as a Service</li>
-							<li>Full-Stack Automation</li>
-							<li>Continuous Deployment</li>
-						</ol>
-					</p>
+          <ol>
+            <li>DOJO Scoring</li>
+            <li>Working with People</li>
+            <li>Working with Machines</li>
+          </ol>
 				</section>
 
-				<section>
-					<h3>The DevOps Journey Map</h3>
-					<p>
-						<img data-src="images/devops-journey.png" width="100%">
-					</p>
-				</section>
+        <section>
+          <section>
+            <h1>DOJO Scoring</h1>
+          </section>
 
-				<section>
-					<section>
-						<h1>Wisdom for Facilitators</h1>
-						<p>
-							<small>Note the down arrow</small>
-						</p>
-					</section>
+          <section>
+            <h3>Scale</h3>
+            <table>
+              <tr><td>0</td><td>Not planned</td></tr>
+              <tr><td>1</td><td>Planned</td></tr>
+              <tr><td>2</td><td>Inconsistently implemented in some areas</td></tr>
+              <tr><td>3</td><td>Consistently implemented in some areas</td></tr>
+              <tr><td>4</td><td>Consistently implemented throughout the organization</td></tr>
+            </table>
+          </section>
 
-					<section>
-						<h1>Getting the right attendees</h1>
-					</section>
+          <section>
+            <h3>Two Passes</h3>
+            <ol>
+              <li>Current state</li>
+              <li>Target state</li>
+            </ol>
+          </section>
 
-					<section>
-						<h1>Scoping the assessment</h1>
-					</section>
+          <section>
+            <h3>Score Each Statement</h3>
+            <h4>Example</h4>
+            <ol>
+              <li>Desired configuration is expressed in chef cookbooks</li>
+              <li>All configuration changes are made via chef-client runs</li>
+              <li>All chef cookbooks are in source control</li>
+            </ol>
+          </section>
 
-					<section>
-						<h1>Purpose of the questions</h1>
-					</section>
+          <section data-transition="fade">
+            <h3>Score Each Statement</h3>
+            <h4>Example with Current State</h4>
+            <ol>
+              <li>Desired configuration is expressed in chef cookbooks <span style="color:red; font-family:Comic Sans MS">2</span></li>
+              <li>All configuration changes are made via chef-client runs <span style="color:red; font-family:Comic Sans MS">1</span></li>
+              <li>All chef cookbooks are in source control <span style="color:red; font-family:Comic Sans MS">1</span></li>
+            </ol>
+          </section>
 
-					<section>
-						<h1>About the phases</h1>
-					</section>
+          <section data-transition="fade">
+            <h3>Score Each Statement</h3>
+            <h4>Example with Current State and Target State</h4>
+            <ol>
+              <li>Desired configuration is expressed in chef cookbooks <span style="color:red; font-family:Comic Sans MS">2, 3</span></li>
+              <li>All configuration changes are made via chef-client runs <span style="color:red; font-family:Comic Sans MS">1, 3</span></li>
+              <li>All chef cookbooks are in source control <span style="color:red; font-family:Comic Sans MS">1, 3</span></li>
+            </ol>
+          </section>
+        </section>
 
-					<section>
-						<h1>Reviewing once you're finished</h1>
-					</section>
-				</section>
-
-				<section>
-					<section>
-						<h1>Organizational Success Factors</h1>
-					</section>
-
-					<section>
-						<h2>Does your IT organization widely recognize IT as a competitive advantage to your business?</h2>
-					</section>
-
-					<section>
-						<h2>Can individuals contribute to any technical project within your organization?</h2>
-					</section>
-
-					<section>
-						<h2>Are there clearly defined business and technical champions to lead change?</h2>
-					</section>
-
-					<section>
-						<h2>Has a project with measureable business value been defined to be automatically deployed to production?</h2>
-					</section>
-
-					<section>
-						<h2>Is risk taking encouraged and are failures learned from in a positive way?</h2>
-					</section>
-
-					<section>
-						<h2>Do you have quantifiable goals visible to all?</h2>
-					</section>
-				</section>
-
-				<section>
-					<section>
-						<h1>Local Development</h1>
-					</section>
+        <section>
+          <section>
+            <h1>Working with People</h1>
+            <ol>
+              <li>Organizational Success Factors</li>
+              <li>Organizational Culture</li>
+              <li>Data-Driven Decision Making</li>
+              <li>Coding Practices</li>
+            </ol>
+          </section>
 
 					<section>
-						<h2>Do developers run Chef local testing tools?</h2>
+						<h3>Organizational Success Factors</h3>
+            <ol>
+              <li>The organization widely recognizes IT as a competitive advantage to its business</li>
+              <li>The organization's leadership team recognizes IT as a competitive advantage</li>
+              <li>Clearly defined business champions lead change</li>
+              <li>Clearly defined technical champions lead change</li>
+              <li>A project with measurable business value been selected to be automatically deployed to production</li>
+              <li>There is a clear understanding of why the business is undertaking a technology transformation</li>
+            </ol>
 					</section>
 
-					<section>
-						<h2>Can developers download code dependancies in a friction-free manner?</h2>
-					</section>
+          <section>
+            <h3>Organizational Culture</h3>
+            <ol>
+              <li>Information is actively sought</li>
+              <li>Responsibilities and risks are shared</li>
+              <li>Cross-functional collaboration is encouraged and rewarded</li>
+              <li>New ideas and innovations are welcomed</li>
+              <li>There is a strong internal community</li>
+              <li>Blameless postmortems are required for success and failure</li>
+              <li>Lessons learned are posted in a highly visible way</li>
+            </ol>
+          </section>
 
-					<section>
-						<h2>Do committed code changes have a reasonable expectation of working in CK and production?</h2>
-					</section>
-				</section>
+          <section>
+            <h3>Data-Driven Decision Making</h3>
+            <ol>
+              <li>The organization has quantifiable goals</li>
+              <li>The organization's goals are visible to all of its members</li>
+              <li>Data is collected and used to make decisions</li>
+              <li>Cost and utilization are monitored</li>
+              <li>Monitoring data from pre-production environments is used to make release decisions</li>
+              <li>Monitoring provides business performance information</li>
+            </ol>
+          </section>
 
-				<section>
-					<section>
-						<h1>Code Collaboration</h1>
-					</section>
+          <section>
+          <h3>Coding Practices</h3>
+            <ol>
+              <li>Developers follow code inspection standards (rubocop, foodcritic, etc.)</li>
+              <li>Code reviews are performed and results are shared with developers</li>
+              <li>Every change is reviewed by at least two people with relevant skill and contextual knowledge</li>
+              <li>Software and automation components are shared and co-developed</li>
+              <li>Any potential contributor to a project can find its code and documentation with minimal assistance</li>
+              <li>Regularly scheduled automation demos occur</li>
+            </ol>
+          </section>
+        </section>
 
-					<section>
-						<h2>Can any potential contributer to a project find the code and documentation with minimal assistance?</h2>
-					</section>
+        <section>
+          <section>
+            <h1>Working with Machines</h1>
+            <ol>
+              <li>Version Control</li>
+              <li>Chef Local Development</li>
+              <li>Continuous Integration</li>
+              <li>Chef Code Deployment</li>
+              <li>Application Deployment</li>
+              <li>Continuous Delivery</li>
+              <li>Virtualization as a Service</li>
+              <li>Full-Stack Automation</li>
+              <li>Sustaining Operations Culture</li>
+            </ol>
+          </section>
 
-					<section>
-						<h2>Are all changes seen by at least two people who have relevant skill and contextual knowledge?</h2>
-					</section>
-				</section>
+          <section>
+            <h3>Version Control</h3>
+            <ol>
+              <li>All source code is stored in a version control system (VCS)</li>
+              <li>All infrastructure and deployment code is stored in VCS</li>
+              <li>Developers can view projects in VCS</li>
+              <li>Developers suggest and/or provide changes to projects in VCS</li>
+              <li>Developers can create new projects in VCS</li>
+              <li>VCS shows who is responsible for each codebase</li>
+              <li>Code documentation is easy to write and is viewable by all with VCS access</li>
+            </ol>
+          </section>
 
-				<section>
-					<section>
-						<h1>Continuous Integration</h1>
-					</section>
+          <section>
+            <h3>Chef Local Development</h3>
+            <ol>
+              <li>Developers provision their own isolated VMs as needed</li>
+              <li>Developers use VM images that closely resemble production systems</li>
+              <li>Developers use Chef development tools (ChefDK, Vagrant, etc)</li>
+              <li>Chef development workstation setup is automated</li>
+              <li>Developers download code dependencies in a friction-free manner</li>
+              <li>Developers run unit tests (ChefSpec) locally</li>
+              <li>Developers run functional tests (ServerSpec) locally</li>
+              <li>Developers run complaince checks (InSpec) locally</li>
+              <li>Developers use Test Kitchen to verify that cookbooks work as intended</li>
+            </ol>
+          </section>
 
-					<section>
-						<h2>Does all code pass through a CI tool before being deployed?</h2>
-					</section>
+          <section>
+            <h3>Continuous Integration</h3>
+            <ol>
+              <li>All projects use a CI service</li>
+              <li>CI automatically tests new branches</li>
+              <li>CI job templates exist for each type of software project (Chef cookbook, Java app servers, Node.js app, etc.)</li>
+              <li>CI job templates include a linting stage</li>
+              <li>CI job templates include a unit testing stage</li>
+              <li>CI job templates include an integration testing stage</li>
+              <li>CI job templates include a functional testing stage</li>
+              <li>CI job templates include a complaince testing stage</li>
+              <li>CI makes the quality of the code base highly visible</li>
+              <li>CI confirms that versions are unique</li>
+              <li>CI jobs automatically update dependencies</li>
+              <li>CI jobs use monitoring to assess each change's effect on system health</li>
+            </ol>
+          </section>
 
-					<section>
-						<h2>Are all deployments, from pre-prod to production, governed by pipelines?</h2>
-					</section>
+          <section>
+            <h3>Chef Code Deployment</h3>
+            <ol>
+              <li>CI jobs upload cookbooks to a Chef server</li>
+              <li>Cookbook updates are only be uploaded via CI</li>
+              <li>All non-cookbook Chef policy (environments, roles, data bags, etc.) are only uploaded via CI</li>
+              <li>CI jobs pin dependencies so that they cannot be modified in later deployments</li>
+              <li>CI jobs assign a set of cookbook versions to a Chef environment</li>
+              <li>Cookbook deployments are automated</li>
+              <li>Cookbook deployment automation manages the sequence of deployments</li>
+            </ol>
+          </section>
 
-					<section>
-						<h2>Does your CI tool make the quality of your code base highly visible?</h2>
-					</section>
+          <section>
+            <h3>Application Deployment</h3>
+            <ol>
+              <li>Applications are deployed without manual intervention</li>
+              <li>Applications follow a clear promotion path (e.g., Dev -> QA -> Staging -> Production)</li>
+              <li>Application deployment automation manages the sequence of deployments (e.g.: Database schema first, then app servers)</li>
+              <li>Application deployment automation performs parallel, rolling, and/or canary deployments</li>
+              <li>Deployments are run during the business day without causing negative user experiences</li>
+            </ol>
+          </section>
 
-					<section>
-						<h2>Is your codebase always in a releasable state?</h2>
-					</section>
-				</section>
+          <section>
+            <h3>Continuous Delivery</h3>
+            <ol>
+              <li>All validation and deployments are executed in a pipeline that goes from source control all the way to production</li>
+              <li>Small batches of work flow through the pipeline</li>
+              <li>Changes are released weekly, if not more frequently</li>
+              <li>Changes that pass validation are automatically released to production</li>
+            </ol>
+          </section>
 
-				<section>
-					<section>
-						<h1>Chef Code Deployment</h1>
-					</section>
+          <section>
+            <h3>Virtualizaton as a Service</h3>
+            <ol>
+              <li>All servers are provisioned via APIs</li>
+              <li>The API is a generally accepted API such as EC2, Azure, OpenStack, vSphere, Docker</li>
+              <li>Access restrictions allow authorized users (e.g., developers and operations) to provision resources, and deny unauthorized users</li>
+              <li>Resources are provisioned in a friction-free manner</li>
+              <li>System images are built via an automated process</li>
+              <li>System images are built from scratch or from a well known, trusted origin</li>
+              <li>System images are built in a pipeline</li>
+              <li>System images are frequently updated</li>
+            </ol>
+          </section>
 
-					<section>
-						<h2>Are all cookbooks delivered by a pipeline?</h2>
-					</section>
+          <section>
+            <h3>Full-Stack Automation</h3>
+            <ol>
+              <li>Storage resources are provisioned by code</li>
+              <li>Networking resources are provisioned by code</li>
+              <li>Identity services are managed by code</li>
+              <li>DNS is configured by code</li>
+              <li>Messaging queues are provisioned by code</li>
+              <li>Security validation is performed by code</li>
+              <li>Performance validation is performed by code</li>
+            </ol>
+          </section>
 
-					<section>
-						<h2>Do you promote a consistant set of cookbook versions between environments?</h2>
-					</section>
-
-					<section>
-						<h2>Can you deploy cookbooks without affecting your users?</h2>
-					</section>
-				</section>
-
-				<section>
-					<section>
-						<h1>Application Deployment</h1>
-					</section>
-
-					<section>
-						<h2>Do you have "1-click" application deployment?</h2>
-					</section>
-
-					<section>
-						<h2>Does your pre-production testing give you confidence in your production deployment?</h2>
-					</section>
-
-					<section>
-						<h2>Can you deploy code without affecting your users?</h2>
-					</section>
-				</section>
-
-				<section>
-					<section>
-						<h1>Virtualization as a Service</h1>
-					</section>
-
-					<section>
-						<h2>Do you use code to provision servers?</h2>
-					</section>
-
-					<section>
-						<h2>Do you build your system images from code?</h2>
-					</section>
-				</section>
-
-				<section>
-					<section>
-						<h1>Full-Stack Automation</h1>
-					</section>
-
-					<section>
-						<h2>Do you use code to provision storage and networking resources?</h2>
-					</section>
-
-					<section>
-						<h2>Do you validate all of the infrastructure dependancies during deployment?</h2>
-					</section>
-
-					<section>
-						<h2>Do you have "1-click" service deployment?</h2>
-					</section>
-				</section>
-
-				<section>
-					<section>
-						<h1>Continuous Deployment</h1>
-					</section>
-
-					<section>
-						<h2>Are the developers who wrote a piece of code responsible for its operation in production?</h2>
-					</section>
-
-					<section>
-						<h2>Do you enforce age limits for all deployed systems and infrastructure components?</h2>
-					</section>
-
-					<section>
-						<h2>Do you have pipelines that safely release changes to production without human verification?</h2>
-					</section>
-				</section>
+          <section>
+            <h3>Sustaining Operations Culture</h3>
+            <ol>
+              <li>The codebase is almost always in a releasable state</li>
+              <li>Compliance is checked automatically</li>
+              <li>Compliance automation removes non-compliant nodes from production upon detection</li>
+              <li>Nodes are destroyed beyond a certain age (e.g. 30 days)</li>
+              <li>Automated services stress the production system (e.g. Chaos Monkey)</li>
+              <li>The entire application is test provisioned and deployed in an alternate datacenter</li>
+              <li>Prodution alerts first notify those who wrote the code</li>
+              <li>Operations, Security, Network, Automation, Testing, and Compliance experts provide tools and coaching to enable development teams</li>
+              <li>Operations, Security, Network, Automation, Testing, and Compliance experts are available to support development teams in issue resolution</li>
+              <li>Different teams, such as Development, Operations, Testing, Security, and Project Management, have shared goals and methodologies</li>
+            </ol>
+          </section>
+        </section>
 
 				<section>
 					<img data-src="images/chef-logo.svg" width="50%">
