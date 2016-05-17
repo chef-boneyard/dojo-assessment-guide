@@ -51,7 +51,10 @@
 				<section>
 					<h1>Agenda</h1>
           <ol>
-            <li>DOJO Scoring</li>
+            <li>The DevOps Journey</li>
+            <!-- Journey Map, Order of Phases, Something about a spider graph -->
+            <li>DOJO Mechanics</li>
+            <!-- Safety, Scoping, Goal Setting, Our Scale, Voting System -->
             <li>Working with People</li>
             <li>Working with Machines</li>
           </ol>
@@ -59,11 +62,44 @@
 
         <section>
           <section>
-            <h1>DOJO Scoring</h1>
+            <h1>The DevOps Journey</h1>
+            <!-- Insert revised Journey Map picture -->
           </section>
 
           <section>
-            <h3>Scale</h3>
+            <h1>The Journey Phases</h1>
+            <ol>
+              <li>Multiple phases can and should be worked on in parallel</li>
+              <li>The earlier phases evolve significantly as the journey progresses</li>
+              <!-- As you make progress in advanced areas, such as full-stack-automation, the scope of early phases, such as testing, expands -->
+              <li>It's natural to skip or inconsistently implement certain phases, so be aware of problems this causes in the later phases</li>
+              <!-- In order to show value quickly, you will sacrifice compeleteness. This is techical debt. Be aware that as you try to improve your system, you will need to go back and clean up. Revisiting is good! -->
+          </section>
+
+          <section>
+            <h1>What You Get When We Are Done</h1>
+            <!-- Show a completed DOJO sample spider graph -->
+          </section>
+        </section>
+
+        <section>
+          <!-- Safety, Scoping, Goal Setting, Our Scale, Voting System -->
+          <section>
+            <h1>Safety</h1>
+            <p>This is a safe space. All of you should feel free to share openly and honestly without repercussions.</p>
+            <!-- Facilitator's note: Make sure to get explicit support for this from the most senior person in the DOJO. -->
+          </section>
+
+          <section>
+            <h1>Scoping</h1>
+          </section>
+
+          <section>
+            <h1>Goal Setting</h1>
+          </section>
+
+          <section>
+            <h1>Our Scale</h1>
             <table>
               <tr><td>0</td><td>Not planned</td></tr>
               <tr><td>1</td><td>Planned</td></tr>
@@ -74,41 +110,7 @@
           </section>
 
           <section>
-            <h3>Two Passes</h3>
-            <ol>
-              <li>Current state</li>
-              <li>Target state</li>
-            </ol>
-          </section>
-
-          <section>
-            <h3>Score Each Statement</h3>
-            <h4>Example</h4>
-            <ol>
-              <li>Desired configuration is expressed in chef cookbooks</li>
-              <li>All configuration changes are made via chef-client runs</li>
-              <li>All chef cookbooks are in source control</li>
-            </ol>
-          </section>
-
-          <section data-transition="fade">
-            <h3>Score Each Statement</h3>
-            <h4>Example with Current State</h4>
-            <ol>
-              <li>Desired configuration is expressed in chef cookbooks <span style="color:red; font-family:Comic Sans MS">2</span></li>
-              <li>All configuration changes are made via chef-client runs <span style="color:red; font-family:Comic Sans MS">1</span></li>
-              <li>All chef cookbooks are in source control <span style="color:red; font-family:Comic Sans MS">1</span></li>
-            </ol>
-          </section>
-
-          <section data-transition="fade">
-            <h3>Score Each Statement</h3>
-            <h4>Example with Current State and Target State</h4>
-            <ol>
-              <li>Desired configuration is expressed in chef cookbooks <span style="color:red; font-family:Comic Sans MS">2, 3</span></li>
-              <li>All configuration changes are made via chef-client runs <span style="color:red; font-family:Comic Sans MS">1, 3</span></li>
-              <li>All chef cookbooks are in source control <span style="color:red; font-family:Comic Sans MS">1, 3</span></li>
-            </ol>
+            <h1>Voting System</h1>
           </section>
         </section>
 
