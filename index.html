@@ -62,12 +62,12 @@
 
         <section>
           <section>
-            <h1>The DevOps Journey</h1>
+            <h2>The DevOps Journey</h2>
             <!-- Insert revised Journey Map picture -->
           </section>
 
           <section>
-            <h1>The Journey Phases</h1>
+            <h2>The Journey Phases</h2>
             <ol>
               <li>Multiple phases can and should be worked on in parallel</li>
               <li>The earlier phases evolve significantly as the journey progresses</li>
@@ -77,13 +77,17 @@
           </section>
 
           <section>
-            <h1>What You Get When We Are Done</h1>
+            <h2>What You Get When We Are Done</h2>
             <!-- Show a completed DOJO sample spider graph -->
           </section>
         </section>
 
         <section>
           <!-- Safety, Scoping, Goal Setting, Our Scale, Voting System -->
+          <section>
+            <h2>DOJO Mechanics</h2>
+          </section>
+
           <section>
             <h1>Safety</h1>
             <p>This is a safe space. All of you should feel free to share openly and honestly without repercussions.</p>
@@ -116,7 +120,7 @@
 
         <section>
           <section>
-            <h1>Working with People</h1>
+            <h2>Working with People</h2>
             <ol>
               <li>Organizational Success Factors</li>
               <li>Organizational Culture</li>
@@ -138,15 +142,13 @@
 					</section>
 
           <section>
-            <h3>Organizational Culture</h3>
+            <h3>Organizational Culture (Westrum)</h3>
             <ol>
               <li>Information is actively sought</li>
               <li>Responsibilities and risks are shared</li>
               <li>Cross-functional collaboration is encouraged and rewarded</li>
               <li>New ideas and innovations are welcomed</li>
-              <li>There is a strong internal community</li>
-              <li>Blameless postmortems are required for success and failure</li>
-              <li>Lessons learned are posted in a highly visible way</li>
+              <li>Failure leads to inquiry</li>
             </ol>
           </section>
 
@@ -171,13 +173,14 @@
               <li>Software and automation components are shared and co-developed</li>
               <li>Any potential contributor to a project can find its code and documentation with minimal assistance</li>
               <li>Regularly scheduled automation demos occur</li>
+              <li>The codebase is almost always in a releasable state</li>
             </ol>
           </section>
         </section>
 
         <section>
           <section>
-            <h1>Working with Machines</h1>
+            <h2>Working with Machines</h2>
             <ol>
               <li>Version Control</li>
               <li>Chef Local Development</li>
@@ -187,6 +190,7 @@
               <li>Continuous Delivery</li>
               <li>Virtualization as a Service</li>
               <li>Full-Stack Automation</li>
+              <li>Compliance Automation</li>
               <li>Sustaining Operations Culture</li>
             </ol>
           </section>
@@ -198,7 +202,7 @@
               <li>All infrastructure and deployment code is stored in VCS</li>
               <li>Developers can view projects in VCS</li>
               <li>Developers suggest and/or provide changes to projects in VCS</li>
-              <li>Developers can create new projects in VCS</li>
+              <li>Developers create new projects in VCS as needed</li>
               <li>VCS shows who is responsible for each codebase</li>
               <li>Code documentation is easy to write and is viewable by all with VCS access</li>
             </ol>
@@ -223,13 +227,13 @@
             <h3>Continuous Integration</h3>
             <ol>
               <li>All projects use a CI service</li>
-              <li>CI automatically tests new branches</li>
+              <li>The CI service automatically tests new branches</li>
               <li>CI job templates exist for each type of software project (Chef cookbook, Java app servers, Node.js app, etc.)</li>
-              <li>CI job templates include a linting stage</li>
-              <li>CI job templates include a unit testing stage</li>
-              <li>CI job templates include an integration testing stage</li>
-              <li>CI job templates include a functional testing stage</li>
-              <li>CI job templates include a complaince testing stage</li>
+              <li>CI jobs lint projects</li>
+              <li>CI jobs unit test projects</li>
+              <li>CI jobs integration test projects</li>
+              <li>CI jobs execute functional tests against projects</li>
+              <li>CI jobs verify complaince of projects</li>
               <li>CI makes the quality of the code base highly visible</li>
               <li>CI confirms that versions are unique</li>
               <li>CI jobs automatically update dependencies</li>
@@ -241,8 +245,8 @@
             <h3>Chef Code Deployment</h3>
             <ol>
               <li>CI jobs upload cookbooks to a Chef server</li>
-              <li>Cookbook updates are only be uploaded via CI</li>
-              <li>All non-cookbook Chef policy (environments, roles, data bags, etc.) are only uploaded via CI</li>
+              <li>Cookbook updates are only uploaded via CI</li>
+              <li>All non-cookbook Chef policy (environments, roles, data bags, etc.) is only uploaded via CI</li>
               <li>CI jobs pin dependencies so that they cannot be modified in later deployments</li>
               <li>CI jobs assign a set of cookbook versions to a Chef environment</li>
               <li>Cookbook deployments are automated</li>
@@ -256,6 +260,7 @@
               <li>Applications are deployed without manual intervention</li>
               <li>Applications follow a clear promotion path (e.g., Dev -> QA -> Staging -> Production)</li>
               <li>Application deployment automation manages the sequence of deployments (e.g.: Database schema first, then app servers)</li>
+              <li>CI jobs automatically update, pin, and test runtime dependencies of applications</li>
               <li>Application deployment automation performs parallel, rolling, and/or canary deployments</li>
               <li>Deployments are run during the business day without causing negative user experiences</li>
             </ol>
@@ -295,22 +300,26 @@
               <li>Messaging queues are provisioned by code</li>
               <li>Security validation is performed by code</li>
               <li>Performance validation is performed by code</li>
+              <li>The entire application is test provisioned and deployed in an alternate datacenter</li>
+            </ol>
+          </section>
+
+          <section>
+            <h3>Compliance Automation</h3>
+            <ol>
+              <li>Compliance policies are expressed in code</li>
+              <li>Compliance is checked automatically</li>
+              <li>Compliance automation removes non-compliant nodes from production upon detection</li>
+              <li>Nodes are destroyed beyond a certain age (e.g. 30 dyas)</li>
             </ol>
           </section>
 
           <section>
             <h3>Sustaining Operations Culture</h3>
             <ol>
-              <li>The codebase is almost always in a releasable state</li>
-              <li>Compliance is checked automatically</li>
-              <li>Compliance automation removes non-compliant nodes from production upon detection</li>
-              <li>Nodes are destroyed beyond a certain age (e.g. 30 days)</li>
               <li>Automated services stress the production system (e.g. Chaos Monkey)</li>
-              <li>The entire application is test provisioned and deployed in an alternate datacenter</li>
               <li>Prodution alerts first notify those who wrote the code</li>
-              <li>Operations, Security, Network, Automation, Testing, and Compliance experts provide tools and coaching to enable development teams</li>
-              <li>Operations, Security, Network, Automation, Testing, and Compliance experts are available to support development teams in issue resolution</li>
-              <li>Different teams, such as Development, Operations, Testing, Security, and Project Management, have shared goals and methodologies</li>
+              <li>Operations, Security, Network, Automation, Testing, and Compliance experts provide developer-friendly tools and coaching to enable development teams</li>
             </ol>
           </section>
         </section>
