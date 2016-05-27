@@ -4,7 +4,7 @@
 	<head>
 		<meta charset="utf-8">
 
-		<title>Chef DOJO Facilitator's Guide</title>
+		<title>Chef DOJO</title>
 
 		<meta name="description" content="The Chef DevOps Journey Assessment tool">
 		<meta name="author" content="Irving Popovetsky">
@@ -44,409 +44,328 @@
 				<section data-background="images/shaolin-masters.jpg">
 					<div class="see-through">
 						<h1>Chef DOJO</h1>
-						<h3>DevOps Journey Overview</h3>
-						<p>
-							<small>Facilitator's Guide</small>
-						</p>
+						<h3>DevOps Journey</h3>
 					</div>
 				</section>
 
 				<section>
 					<h1>Agenda</h1>
-					<p>
-						<ol>
-							<li>The DevOps Journey Map</li>
-							<li>Wisdom for Facilitators</li>
-							<li>Organizational Success Factors</li>
-							<li>Local Development</li>
-							<li>Code Collaboration</li>
-							<li>Continuous Integration</li>
-							<li>Chef Code Deployment</li>
-							<li>Application Deployment</li>
-							<li>Virtualization as a Service</li>
-							<li>Full-Stack Automation</li>
-							<li>Continuous Deployment</li>
-						</ol>
-					</p>
+          <ol>
+            <li>The DevOps Journey</li>
+            <!-- Journey Map, Order of Phases, Something about a spider graph -->
+            <li>DOJO Mechanics</li>
+            <!-- Safety, Scoping, Goal Setting, Our Scale, Voting System -->
+            <li>Working with People</li>
+            <li>Working with Machines</li>
+          </ol>
 				</section>
 
-				<section>
-					<h3>The DevOps Journey Map</h3>
-					<p>
-						<img data-src="images/devops-journey.png" width="100%">
-					</p>
-				</section>
+        <section>
+          <section>
+            <h2>The DevOps Journey</h2>
+            <ol>
+              <li>DevOps Journey Map</li>
+              <li>The Journey Phases</li>
+              <li>What You Get When We Are Done</li>
+            </ol>
+            <!-- Insert revised Journey Map picture -->
+          </section>
 
-				<section>
+          <section>
+            <h3>DevOps Journey Map</h3>
+            <img src="images/journey_map.png">
+          </section>
+
+          <section>
+            <h3>The Journey Phases</h3>
+            <ul>
+              <li>Multiple phases can and should be worked on in parallel</li>
+              <li>The earlier phases evolve significantly as the journey progresses</li>
+              <!-- As you make progress in advanced areas, such as full-stack-automation, the scope of early phases, such as testing, expands -->
+              <li>It's natural to skip or inconsistently implement certain phases, so be aware of problems this causes in the later phases</li>
+              <!-- In order to show value quickly, you will sacrifice compeleteness. This is techical debt. Be aware that as you try to improve your system, you will need to go back and clean up. Revisiting is good! -->
+            </ul>
+          </section>
+
+          <section>
+            <h3>What You Get When We Are Done</h3>
+            <!-- Show a completed DOJO sample spider graph -->
+          </section>
+        </section>
+
+        <section>
+          <!-- Safety, Scoping, Goal Setting, Our Scale, Voting System -->
+          <section>
+            <h2>DOJO Mechanics</h2>
+            <ol>
+              <li>Safety</li>
+              <li>Scoping</li>
+              <li>Goal Setting</li>
+              <li>Our Scale</li>
+              <li>Scoring</li>
+            </ol>
+          </section>
+
+          <section>
+            <h3>Safety</h3>
+            <p>This is a safe space. All of you should feel free to share openly and honestly without repercussions.</p>
+            <!-- Facilitator's note: Make sure to get explicit support for this from the most senior person in the DOJO. -->
+          </section>
+
+          <section>
+            <h3>Scoping</h3>
+            <p>We focus on a service and the people who provide it.</p>
+            <ul>
+              <li>Development</li>
+              <li>Operations</li>
+              <li>Management</li>
+              <li>Architecture</li>
+              <li>Testing</li>
+              <li>Security</li>
+              <li>Compliance</li>
+              <li>Release</li>
+              <li>Support</li>
+            </ul>
+          </section>
+
+          <section>
+            <h3>Goal Setting</h3>
+            <p>In this exercise, we want to assess your current state. After you have that, we want you to agree to a six month goal.</p>
+          </section>
+
+          <section>
+            <h3>Our Scale</h3>
+            <table>
+              <tr><td>0</td><td>Not planned</td></tr>
+              <tr><td>1</td><td>Planned</td></tr>
+              <tr><td>2</td><td>Inconsistently implemented in some areas</td></tr>
+              <tr><td>3</td><td>Consistently implemented in some areas</td></tr>
+              <tr><td>4</td><td>Consistently implemented throughout the organization</td></tr>
+            </table>
+          </section>
+
+          <section>
+            <h3>Scoring</h3>
+            <p>The sections of the DOJO each have a few statements. For each section, we will follow this process:</p>
+            <ol>
+              <li>Individuals score each statement for current state</li>
+              <li>Group shares scores</li>
+              <li>Group discusses any differing scores</li>
+              <li>Consenus on scores</li>
+              <li>Repeat for the goal</li>
+            </ol>
+
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <h2>Working with People</h2>
+            <ol>
+              <li>Organizational Success Factors</li>
+              <li>Organizational Culture</li>
+              <li>Data-Driven Decision Making</li>
+              <li>Coding Practices</li>
+            </ol>
+          </section>
+
 					<section>
-						<h1>Wisdom for Facilitators</h1>
-						<p>
-							<small>Note the down arrow</small>
-						</p>
+						<h3>Organizational Success Factors</h3>
+            <ol>
+              <li>The organization widely recognizes IT as a competitive advantage to its business</li>
+              <li>The organization's leadership team recognizes IT as a competitive advantage</li>
+              <li>Clearly defined business champions lead change</li>
+              <li>Clearly defined technical champions lead change</li>
+              <li>A project with measurable business value been selected to be automatically deployed to production</li>
+              <li>There is a clear understanding of why the business is undertaking a technology transformation</li>
+            </ol>
 					</section>
 
-					<section>
-						<h1>Getting the right attendees</h1>
-					</section>
+          <section>
+            <h3>Organizational Culture (Westrum)</h3>
+            <ol>
+              <li>Information is actively sought</li>
+              <li>Responsibilities and risks are shared</li>
+              <li>Cross-functional collaboration is encouraged and rewarded</li>
+              <li>New ideas and innovations are welcomed</li>
+              <li>Failure leads to inquiry</li>
+            </ol>
+          </section>
 
-					<section>
-						<h1>Scoping the assessment</h1>
-					</section>
+          <section>
+            <h3>Data-Driven Decision Making</h3>
+            <ol>
+              <li>The organization has quantifiable goals</li>
+              <li>The organization's goals are visible to all of its members</li>
+              <li>Data is collected and used to make decisions</li>
+              <li>Cost and utilization are monitored</li>
+              <li>Monitoring data from pre-production environments is used to make release decisions</li>
+              <li>Monitoring provides business performance information</li>
+            </ol>
+          </section>
 
-					<section>
-						<h1>Purpose of the questions</h1>
-					</section>
+          <section>
+          <h3>Coding Practices</h3>
+            <ol>
+              <li>Developers follow code inspection standards (rubocop, foodcritic, etc.)</li>
+              <li>Code reviews are performed and results are shared with developers</li>
+              <li>Every change is reviewed by at least two people with relevant skill and contextual knowledge</li>
+              <li>Software and automation components are shared and co-developed</li>
+              <li>Any potential contributor to a project can find its code and documentation with minimal assistance</li>
+              <li>Regularly scheduled automation demos occur</li>
+              <li>The codebase is almost always in a releasable state</li>
+            </ol>
+          </section>
+        </section>
 
-					<section>
-						<h1>About the phases</h1>
-					</section>
+        <section>
+          <section>
+            <h2>Working with Machines</h2>
+            <ol>
+              <li>Version Control</li>
+              <li>Chef Local Development</li>
+              <li>Continuous Integration</li>
+              <li>Chef Code Deployment</li>
+              <li>Application Deployment</li>
+              <li>Continuous Delivery</li>
+              <li>Virtualization as a Service</li>
+              <li>Full-Stack Automation</li>
+              <li>Compliance Automation</li>
+              <li>Sustaining Operations Culture</li>
+            </ol>
+          </section>
 
-					<section>
-						<h1>Reviewing once you're finished</h1>
-					</section>
-				</section>
+          <section>
+            <h3>Version Control</h3>
+            <ol>
+              <li>All source code is stored in a version control system (VCS)</li>
+              <li>All infrastructure and deployment code is stored in VCS</li>
+              <li>Developers can view projects in VCS</li>
+              <li>Developers suggest and/or provide changes to projects in VCS</li>
+              <li>Developers create new projects in VCS as needed</li>
+              <li>VCS shows who is responsible for each codebase</li>
+              <li>Code documentation is easy to write and is viewable by all with VCS access</li>
+            </ol>
+          </section>
+
+          <section>
+            <h3>Chef Local Development</h3>
+            <ol>
+              <li>Developers provision their own isolated VMs as needed</li>
+              <li>Developers use VM images that closely resemble production systems</li>
+              <li>Developers use Chef development tools (ChefDK, Vagrant, etc)</li>
+              <li>Chef development workstation setup is automated</li>
+              <li>Developers download code dependencies in a friction-free manner</li>
+              <li>Developers run unit tests (ChefSpec) locally</li>
+              <li>Developers run functional tests (ServerSpec) locally</li>
+              <li>Developers run complaince checks (InSpec) locally</li>
+              <li>Developers use Test Kitchen to verify that cookbooks work as intended</li>
+            </ol>
+          </section>
+
+          <section>
+            <h3>Continuous Integration</h3>
+            <ol>
+              <li>All projects use a CI service</li>
+              <li>The CI service automatically tests new branches</li>
+              <li>CI job templates exist for each type of software project (Chef cookbook, Java app servers, Node.js app, etc.)</li>
+              <li>CI jobs lint projects</li>
+              <li>CI jobs unit test projects</li>
+              <li>CI jobs integration test projects</li>
+              <li>CI jobs execute functional tests against projects</li>
+              <li>CI jobs verify complaince of projects</li>
+              <li>CI makes the quality of the code base highly visible</li>
+              <li>CI confirms that versions are unique</li>
+              <li>CI jobs automatically update dependencies</li>
+              <li>CI jobs use monitoring to assess each change's effect on system health</li>
+            </ol>
+          </section>
+
+          <section>
+            <h3>Chef Code Deployment</h3>
+            <ol>
+              <li>CI jobs upload cookbooks to a Chef server</li>
+              <li>Cookbook updates are only uploaded via CI</li>
+              <li>All non-cookbook Chef policy (environments, roles, data bags, etc.) is only uploaded via CI</li>
+              <li>CI jobs pin dependencies so that they cannot be modified in later deployments</li>
+              <li>CI jobs assign a set of cookbook versions to a Chef environment</li>
+              <li>Cookbook deployments are automated</li>
+              <li>Cookbook deployment automation manages the sequence of deployments</li>
+            </ol>
+          </section>
+
+          <section>
+            <h3>Application Deployment</h3>
+            <ol>
+              <li>Applications are deployed without manual intervention</li>
+              <li>Applications follow a clear promotion path (e.g., Dev -> QA -> Staging -> Production)</li>
+              <li>Application deployment automation manages the sequence of deployments (e.g.: Database schema first, then app servers)</li>
+              <li>CI jobs automatically update, pin, and test runtime dependencies of applications</li>
+              <li>Application deployment automation performs parallel, rolling, and/or canary deployments</li>
+              <li>Deployments are run during the business day without causing negative user experiences</li>
+            </ol>
+          </section>
+
+          <section>
+            <h3>Continuous Delivery</h3>
+            <ol>
+              <li>All validation and deployments are executed in a pipeline that goes from source control all the way to production</li>
+              <li>Small batches of work flow through the pipeline</li>
+              <li>Changes are released weekly, if not more frequently</li>
+              <li>Changes that pass validation are automatically released to production</li>
+            </ol>
+          </section>
+
+          <section>
+            <h3>Virtualizaton as a Service</h3>
+            <ol>
+              <li>All servers are provisioned via APIs</li>
+              <li>The API is a generally accepted API such as EC2, Azure, OpenStack, vSphere, Docker</li>
+              <li>Access restrictions allow authorized users (e.g., developers and operations) to provision resources, and deny unauthorized users</li>
+              <li>Resources are provisioned in a friction-free manner</li>
+              <li>System images are built via an automated process</li>
+              <li>System images are built from scratch or from a well known, trusted origin</li>
+              <li>System images are built in a pipeline</li>
+              <li>System images are frequently updated</li>
+            </ol>
+          </section>
+
+          <section>
+            <h3>Full-Stack Automation</h3>
+            <ol>
+              <li>Storage resources are provisioned by code</li>
+              <li>Networking resources are provisioned by code</li>
+              <li>Identity services are managed by code</li>
+              <li>DNS is configured by code</li>
+              <li>Messaging queues are provisioned by code</li>
+              <li>Security validation is performed by code</li>
+              <li>Performance validation is performed by code</li>
+              <li>The entire application is test provisioned and deployed in an alternate datacenter</li>
+            </ol>
+          </section>
+
+          <section>
+            <h3>Compliance Automation</h3>
+            <ol>
+              <li>Compliance policies are expressed in code</li>
+              <li>Compliance is checked automatically</li>
+              <li>Compliance automation removes non-compliant nodes from production upon detection</li>
+              <li>Nodes are destroyed beyond a certain age (e.g. 30 dyas)</li>
+            </ol>
+          </section>
+
+          <section>
+            <h3>Sustaining Operations Culture</h3>
+            <ol>
+              <li>Automated services stress the production system (e.g. Chaos Monkey)</li>
+              <li>Prodution alerts first notify those who wrote the code</li>
+              <li>Operations, Security, Network, Automation, Testing, and Compliance experts provide developer-friendly tools and coaching to enable development teams</li>
+            </ol>
+          </section>
+        </section>
 
 				<section>
 					<img data-src="images/chef-logo.svg" width="50%">
-				</section>
-
-				<section>
-					<h1>Stock slides after this point</h1>
-				</section>
-
-				<section>
-					<h1>Reveal.js</h1>
-					<h3>The HTML Presentation Framework</h3>
-					<p>
-						<small>Created by <a href="http://hakim.se">Hakim El Hattab</a> / <a href="http://twitter.com/hakimel">@hakimel</a></small>
-					</p>
-				</section>
-
-				<section>
-					<h2>Hello There</h2>
-					<p>
-						reveal.js enables you to create beautiful interactive slide decks using HTML. This presentation will show you examples of what it can do.
-					</p>
-				</section>
-
-				<!-- Example of nested vertical slides -->
-				<section>
-					<section>
-						<h2>Vertical Slides</h2>
-						<p>Slides can be nested inside of each other.</p>
-						<p>Use the <em>Space</em> key to navigate through all slides.</p>
-						<br>
-						<a href="#" class="navigate-down">
-							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-						</a>
-					</section>
-					<section>
-						<h2>Basement Level 1</h2>
-						<p>Nested slides are useful for adding additional detail underneath a high level horizontal slide.</p>
-					</section>
-					<section>
-						<h2>Basement Level 2</h2>
-						<p>That's it, time to go back up.</p>
-						<br>
-						<a href="#/2">
-							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Up arrow" style="transform: rotate(180deg); -webkit-transform: rotate(180deg);">
-						</a>
-					</section>
-				</section>
-
-				<section>
-					<h2>Slides</h2>
-					<p>
-						Not a coder? Not a problem. There's a fully-featured visual editor for authoring these, try it out at <a href="http://slides.com" target="_blank">http://slides.com</a>.
-					</p>
-				</section>
-
-				<section>
-					<h2>Point of View</h2>
-					<p>
-						Press <strong>ESC</strong> to enter the slide overview.
-					</p>
-					<p>
-						Hold down alt and click on any element to zoom in on it using <a href="http://lab.hakim.se/zoom-js">zoom.js</a>. Alt + click anywhere to zoom back out.
-					</p>
-				</section>
-
-				<section>
-					<h2>Touch Optimized</h2>
-					<p>
-						Presentations look great on touch devices, like mobile phones and tablets. Simply swipe through your slides.
-					</p>
-				</section>
-
-				<section data-markdown>
-					<script type="text/template">
-						## Markdown support
-
-						Write content using inline or external Markdown.
-						Instructions and more info available in the [readme](https://github.com/hakimel/reveal.js#markdown).
-
-						```
-						<section data-markdown>
-						  ## Markdown support
-
-						  Write content using inline or external Markdown.
-						  Instructions and more info available in the [readme](https://github.com/hakimel/reveal.js#markdown).
-						</section>
-						```
-					</script>
-				</section>
-
-				<section>
-					<section id="fragments">
-						<h2>Fragments</h2>
-						<p>Hit the next arrow...</p>
-						<p class="fragment">... to step through ...</p>
-						<p><span class="fragment">... a</span> <span class="fragment">fragmented</span> <span class="fragment">slide.</span></p>
-
-						<aside class="notes">
-							This slide has fragments which are also stepped through in the notes window.
-						</aside>
-					</section>
-					<section>
-						<h2>Fragment Styles</h2>
-						<p>There's different types of fragments, like:</p>
-						<p class="fragment grow">grow</p>
-						<p class="fragment shrink">shrink</p>
-						<p class="fragment fade-out">fade-out</p>
-						<p class="fragment current-visible">current-visible</p>
-						<p class="fragment highlight-red">highlight-red</p>
-						<p class="fragment highlight-blue">highlight-blue</p>
-					</section>
-				</section>
-
-				<section id="transitions">
-					<h2>Transition Styles</h2>
-					<p>
-						You can select from different transitions, like: <br>
-						<a href="?transition=none#/transitions">None</a> -
-						<a href="?transition=fade#/transitions">Fade</a> -
-						<a href="?transition=slide#/transitions">Slide</a> -
-						<a href="?transition=convex#/transitions">Convex</a> -
-						<a href="?transition=concave#/transitions">Concave</a> -
-						<a href="?transition=zoom#/transitions">Zoom</a>
-					</p>
-				</section>
-
-				<section id="themes">
-					<h2>Themes</h2>
-					<p>
-						reveal.js comes with a few themes built in: <br>
-						<!-- Hacks to swap themes after the page has loaded. Not flexible and only intended for the reveal.js demo deck. -->
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/black.css'); return false;">Black (default)</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/white.css'); return false;">White</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/league.css'); return false;">League</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/sky.css'); return false;">Sky</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/beige.css'); return false;">Beige</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/simple.css'); return false;">Simple</a> <br>
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/serif.css'); return false;">Serif</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/blood.css'); return false;">Blood</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/night.css'); return false;">Night</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/moon.css'); return false;">Moon</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/solarized.css'); return false;">Solarized</a>
-					</p>
-				</section>
-
-				<section>
-					<section data-background="#dddddd">
-						<h2>Slide Backgrounds</h2>
-						<p>
-							Set <code>data-background="#dddddd"</code> on a slide to change the background color. All CSS color formats are supported.
-						</p>
-						<a href="#" class="navigate-down">
-							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-						</a>
-					</section>
-					<section data-background="https://s3.amazonaws.com/hakim-static/reveal-js/image-placeholder.png">
-						<h2>Image Backgrounds</h2>
-						<pre><code>&lt;section data-background="image.png"&gt;</code></pre>
-					</section>
-					<section data-background="https://s3.amazonaws.com/hakim-static/reveal-js/image-placeholder.png" data-background-repeat="repeat" data-background-size="100px">
-						<h2>Tiled Backgrounds</h2>
-						<pre><code style="word-wrap: break-word;">&lt;section data-background="image.png" data-background-repeat="repeat" data-background-size="100px"&gt;</code></pre>
-					</section>
-					<section data-background-video="https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.mp4,https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.webm" data-background-color="#000000">
-						<div style="background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px;">
-							<h2>Video Backgrounds</h2>
-							<pre><code style="word-wrap: break-word;">&lt;section data-background-video="video.mp4,video.webm"&gt;</code></pre>
-						</div>
-					</section>
-					<section data-background="http://i.giphy.com/90F8aUepslB84.gif">
-						<h2>... and GIFs!</h2>
-					</section>
-				</section>
-
-				<section data-transition="slide" data-background="#4d7e65" data-background-transition="zoom">
-					<h2>Background Transitions</h2>
-					<p>
-						Different background transitions are available via the backgroundTransition option. This one's called "zoom".
-					</p>
-					<pre><code>Reveal.configure({ backgroundTransition: 'zoom' })</code></pre>
-				</section>
-
-				<section data-transition="slide" data-background="#b5533c" data-background-transition="zoom">
-					<h2>Background Transitions</h2>
-					<p>
-						You can override background transitions per-slide.
-					</p>
-					<pre><code style="word-wrap: break-word;">&lt;section data-background-transition="zoom"&gt;</code></pre>
-				</section>
-
-				<section>
-					<h2>Pretty Code</h2>
-					<pre><code data-trim contenteditable>
-function linkify( selector ) {
-  if( supports3DTransforms ) {
-
-    var nodes = document.querySelectorAll( selector );
-
-    for( var i = 0, len = nodes.length; i &lt; len; i++ ) {
-      var node = nodes[i];
-
-      if( !node.className ) {
-        node.className += ' roll';
-      }
-    }
-  }
-}
-					</code></pre>
-					<p>Code syntax highlighting courtesy of <a href="http://softwaremaniacs.org/soft/highlight/en/description/">highlight.js</a>.</p>
-				</section>
-
-				<section>
-					<h2>Marvelous List</h2>
-					<ul>
-						<li>No order here</li>
-						<li>Or here</li>
-						<li>Or here</li>
-						<li>Or here</li>
-					</ul>
-				</section>
-
-				<section>
-					<h2>Fantastic Ordered List</h2>
-					<ol>
-						<li>One is smaller than...</li>
-						<li>Two is smaller than...</li>
-						<li>Three!</li>
-					</ol>
-				</section>
-
-				<section>
-					<h2>Tabular Tables</h2>
-					<table>
-						<thead>
-							<tr>
-								<th>Item</th>
-								<th>Value</th>
-								<th>Quantity</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>Apples</td>
-								<td>$1</td>
-								<td>7</td>
-							</tr>
-							<tr>
-								<td>Lemonade</td>
-								<td>$2</td>
-								<td>18</td>
-							</tr>
-							<tr>
-								<td>Bread</td>
-								<td>$3</td>
-								<td>2</td>
-							</tr>
-						</tbody>
-					</table>
-				</section>
-
-				<section>
-					<h2>Clever Quotes</h2>
-					<p>
-						These guys come in two forms, inline: <q cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-						&ldquo;The nice thing about standards is that there are so many to choose from&rdquo;</q> and block:
-					</p>
-					<blockquote cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-						&ldquo;For years there has been a theory that millions of monkeys typing at random on millions of typewriters would
-						reproduce the entire works of Shakespeare. The Internet has proven this theory to be untrue.&rdquo;
-					</blockquote>
-				</section>
-
-				<section>
-					<h2>Intergalactic Interconnections</h2>
-					<p>
-						You can link between slides internally,
-						<a href="#/2/3">like this</a>.
-					</p>
-				</section>
-
-				<section>
-					<h2>Speaker View</h2>
-					<p>There's a <a href="https://github.com/hakimel/reveal.js#speaker-notes">speaker view</a>. It includes a timer, preview of the upcoming slide as well as your speaker notes.</p>
-					<p>Press the <em>S</em> key to try it out.</p>
-
-					<aside class="notes">
-						Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
-					</aside>
-				</section>
-
-				<section>
-					<h2>Export to PDF</h2>
-					<p>Presentations can be <a href="https://github.com/hakimel/reveal.js#pdf-export">exported to PDF</a>, here's an example:</p>
-					<iframe src="//www.slideshare.net/slideshow/embed_code/42840540" width="445" height="355" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:3px solid #666; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
-				</section>
-
-				<section>
-					<h2>Global State</h2>
-					<p>
-						Set <code>data-state="something"</code> on a slide and <code>"something"</code>
-						will be added as a class to the document element when the slide is open. This lets you
-						apply broader style changes, like switching the page background.
-					</p>
-				</section>
-
-				<section data-state="customevent">
-					<h2>State Events</h2>
-					<p>
-						Additionally custom events can be triggered on a per slide basis by binding to the <code>data-state</code> name.
-					</p>
-					<pre><code class="javascript" data-trim contenteditable style="font-size: 18px;">
-Reveal.addEventListener( 'customevent', function() {
-	console.log( '"customevent" has fired' );
-} );
-					</code></pre>
-				</section>
-
-				<section>
-					<h2>Take a Moment</h2>
-					<p>
-						Press B or . on your keyboard to pause the presentation. This is helpful when you're on stage and want to take distracting slides off the screen.
-					</p>
-				</section>
-
-				<section>
-					<h2>Much more</h2>
-					<ul>
-						<li>Right-to-left support</li>
-						<li><a href="https://github.com/hakimel/reveal.js#api">Extensive JavaScript API</a></li>
-						<li><a href="https://github.com/hakimel/reveal.js#auto-sliding">Auto-progression</a></li>
-						<li><a href="https://github.com/hakimel/reveal.js#parallax-background">Parallax backgrounds</a></li>
-						<li><a href="https://github.com/hakimel/reveal.js#keyboard-bindings">Custom keyboard bindings</a></li>
-					</ul>
-				</section>
-
-				<section style="text-align: left;">
-					<h1>THE END</h1>
-					<p>
-						- <a href="http://slides.com">Try the online editor</a> <br>
-						- <a href="https://github.com/hakimel/reveal.js">Source code &amp; documentation</a>
-					</p>
 				</section>
 
 			</div>
