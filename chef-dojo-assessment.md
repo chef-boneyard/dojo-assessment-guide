@@ -267,7 +267,7 @@ The sections of the DOJO each have a few statements. For each section, we will f
 1. Compliance policies are expressed in code
 1. Compliance is checked automatically
 1. Compliance automation removes non-compliant nodes from production upon detection
-1. Nodes are destroyed beyond a certain age (e.g. 30 dyas)
+1. Nodes are destroyed beyond a certain age (e.g. 30 days)
 
 
 ## Sustaining Operations Culture
