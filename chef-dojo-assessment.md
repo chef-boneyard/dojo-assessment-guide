@@ -39,9 +39,13 @@ As you make progress in advanced areas, such as full-stack-automation, the scope
 In order to show value quickly, you will sacrifice compeleteness. This is techical debt. Be aware that as you try to improve your system, you will need to go back and clean up. Revisiting is good!
 
 
-# What You Get When We Are Done
+### What You Get When We Are Done
 <!-- Show a completed DOJO sample spider graph -->
-
+<canvas data-chart="radar">
+Month, January, February, March, April, May, June, July
+My first dataset, 65, 59, 80, 81, 56, 55, 40
+My second dataset, 28, 48, 40, 19, 86, 27, 90	
+</canvas>
 
 
 # DOJO Mechanics
