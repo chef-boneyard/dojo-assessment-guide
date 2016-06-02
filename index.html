@@ -41,19 +41,19 @@
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
           <!--This section defines how the markdown will be translated to build the slides -->
-          <section data-markdown="dojo-intro.md"  
+          <section data-markdown="dojo/dojo-intro.md"  
                    data-separator="^\n\n\n"  
                    data-separator-vertical="^\n\n"  
                    data-separator-notes="^Note:"  
                    data-charset="iso-8859-15">
           </section>
-          <section data-markdown="dojo-body.md"  
+          <section data-markdown="dojo/dojo-body.md"  
                    data-separator="^\n\n\n"  
                    data-separator-vertical="^\n\n"  
                    data-separator-notes="^Note:"  
                    data-charset="iso-8859-15">
           </section>
-          <section data-markdown="dojo-closing.md"  
+          <section data-markdown="dojo/dojo-closing.md"  
                    data-separator="^\n\n\n"  
                    data-separator-vertical="^\n\n"  
                    data-separator-notes="^Note:"  
@@ -87,14 +87,15 @@
             },
             scale: { 
               gridLines: { color: "#FFF", zeroLineColor: "#FFF" }, 
-              ticks: { fontColor: "#FFF"}
+              ticks: {
+                display: false, 
+              }
             } 
           },
           line: { borderColor: [ "rgba(20,220,220,.8)" , "rgba(220,120,120,.8)", "rgba(20,120,220,.8)" ], "borderDash": [ [5,10], [0,0] ]}, 
           bar: { backgroundColor: [ "rgba(20,220,220,.8)" , "rgba(220,120,120,.8)", "rgba(20,120,220,.8)" ]}, 
           pie: { backgroundColor: [ ["rgba(0,0,0,.8)" , "rgba(220,20,20,.8)", "rgba(20,220,20,.8)", "rgba(220,220,20,.8)", "rgba(20,20,220,.8)"] ]},
-          radar: { borderColor: [ "rgba(20,220,220,.8)" , "rgba(220,120,120,.8)", "rgba(20,120,220,.8)" ]},
-          scaleShowLabels: false 
+          radar: { borderColor: [ "rgba(20,220,220,.8)" , "rgba(220,120,120,.8)", "rgba(20,120,220,.8)" ]}   
         },
   			// Optional reveal.js plugins
   			dependencies: [
