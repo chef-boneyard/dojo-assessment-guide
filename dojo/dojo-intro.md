@@ -58,7 +58,7 @@ In order to show value quickly, you will sacrifice compeleteness. This is techic
 
 ### What You Get When We Are Done
 <!-- Show a completed DOJO sample spider graph -->
-<canvas data-chart="radar" data-chart-src="data/chartExample.csv"/>
+<canvas data-chart="radar" data-chart-src="data/chartExample.csv" width="500" height="300" />
 
 
 ### What You Get When We Are Done

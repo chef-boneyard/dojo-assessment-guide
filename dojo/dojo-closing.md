@@ -16,8 +16,8 @@
 #
 -->
 
-# Results
-<canvas data-chart="radar" data-chart-src="data/customer.csv"/>
+### Results
+<canvas data-chart="radar" data-chart-src="data/customer.csv" width="500" height="300" />
 
 
 # Results
