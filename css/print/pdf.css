@@ -81,6 +81,8 @@ ul, ol, div, p {
 	position: static;
 	width: 100%;
 	height: auto;
+	/* custom addition for chef-dojo */
+	background-color: #3f5364;
 
 	left: auto;
 	top: auto;
