@@ -15,19 +15,21 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
 
 		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/chefconf2015.css" id="theme">
+    <link rel="stylesheet" href="css/theme/chefconf2015.css" id="theme">
 
 		<!-- Code syntax highlighting -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
 
-		<!-- Printing and PDF exports -->
-		<script>
-			var link = document.createElement( 'link' );
-			link.rel = 'stylesheet';
-			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-			document.getElementsByTagName( 'head' )[0].appendChild( link );
-		</script>
+    <!-- Printing and PDF exports -->
+    <script>
+      if( window.location.search.match( /print-pdf/gi ) ) {
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = 'css/print/pdf.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+      }
+    </script>
 
 		<!--[if lt IE 9]>
 		<script src="lib/js/html5shiv.js"></script>
@@ -37,337 +39,28 @@
 	<body>
 
 		<div class="reveal">
-
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
 
-				<section data-background="images/shaolin-masters.jpg">
-					<div class="see-through">
-						<h1>Chef DOJO</h1>
-						<h3>DevOps Journey</h3>
-					</div>
-				</section>
-
-				<section>
-					<h1>Agenda</h1>
-          <ol>
-            <li>The DevOps Journey</li>
-            <!-- Journey Map, Order of Phases, Something about a spider graph -->
-            <li>DOJO Mechanics</li>
-            <!-- Safety, Scoping, Goal Setting, Our Scale, Voting System -->
-            <li>Working with People</li>
-            <li>Working with Machines</li>
-          </ol>
-				</section>
-
-        <section>
-          <section>
-            <h2>The DevOps Journey</h2>
-            <ol>
-              <li>DevOps Journey Map</li>
-              <li>The Journey Phases</li>
-              <li>What You Get When We Are Done</li>
-            </ol>
-            <!-- Insert revised Journey Map picture -->
+          <!--This section defines how the markdown will be translated to build the slides -->
+          <section data-markdown="dojo/dojo-intro.md"  
+                   data-separator="^\n\n\n"  
+                   data-separator-vertical="^\n\n"  
+                   data-separator-notes="^Note:"  
+                   data-charset="iso-8859-15">
           </section>
-
-          <section>
-            <h3>DevOps Journey Map</h3>
-            <img src="images/journey_map.png">
+          <section data-markdown="dojo/dojo-body.md"  
+                   data-separator="^\n\n\n"  
+                   data-separator-vertical="^\n\n"  
+                   data-separator-notes="^Note:"  
+                   data-charset="iso-8859-15">
           </section>
-
-          <section>
-            <h3>The Journey Phases</h3>
-            <ul>
-              <li>Multiple phases can and should be worked on in parallel</li>
-              <li>The earlier phases evolve significantly as the journey progresses</li>
-              <!-- As you make progress in advanced areas, such as full-stack-automation, the scope of early phases, such as testing, expands -->
-              <li>It's natural to skip or inconsistently implement certain phases, so be aware of problems this causes in the later phases</li>
-              <!-- In order to show value quickly, you will sacrifice compeleteness. This is techical debt. Be aware that as you try to improve your system, you will need to go back and clean up. Revisiting is good! -->
-            </ul>
+          <section data-markdown="dojo/dojo-closing.md"  
+                   data-separator="^\n\n\n"  
+                   data-separator-vertical="^\n\n"  
+                   data-separator-notes="^Note:"  
+                   data-charset="iso-8859-15">
           </section>
-
-          <section>
-            <h3>What You Get When We Are Done</h3>
-            <!-- Show a completed DOJO sample spider graph -->
-          </section>
-        </section>
-
-        <section>
-          <!-- Safety, Scoping, Goal Setting, Our Scale, Voting System -->
-          <section>
-            <h2>DOJO Mechanics</h2>
-            <ol>
-              <li>Safety</li>
-              <li>Scoping</li>
-              <li>Goal Setting</li>
-              <li>Our Scale</li>
-              <li>Scoring</li>
-            </ol>
-          </section>
-
-          <section>
-            <h3>Safety</h3>
-            <p>This is a safe space. All of you should feel free to share openly and honestly without repercussions.</p>
-            <!-- Facilitator's note: Make sure to get explicit support for this from the most senior person in the DOJO. -->
-          </section>
-
-          <section>
-            <h3>Scoping</h3>
-            <p>We focus on a service and the people who provide it.</p>
-            <ul>
-              <li>Development</li>
-              <li>Operations</li>
-              <li>Management</li>
-              <li>Architecture</li>
-              <li>Testing</li>
-              <li>Security</li>
-              <li>Compliance</li>
-              <li>Release</li>
-              <li>Support</li>
-            </ul>
-          </section>
-
-          <section>
-            <h3>Goal Setting</h3>
-            <p>In this exercise, we want to assess your current state. After you have that, we want you to agree to a six month goal.</p>
-          </section>
-
-          <section>
-            <h3>Our Scale</h3>
-            <table>
-              <tr><td>0</td><td>Not planned</td></tr>
-              <tr><td>1</td><td>Planned</td></tr>
-              <tr><td>2</td><td>Inconsistently implemented in some areas</td></tr>
-              <tr><td>3</td><td>Consistently implemented in some areas</td></tr>
-              <tr><td>4</td><td>Consistently implemented throughout the organization</td></tr>
-            </table>
-          </section>
-
-          <section>
-            <h3>Scoring</h3>
-            <p>The sections of the DOJO each have a few statements. For each section, we will follow this process:</p>
-            <ol>
-              <li>Individuals score each statement for current state</li>
-              <li>Group shares scores</li>
-              <li>Group discusses any differing scores</li>
-              <li>Consenus on scores</li>
-              <li>Repeat for the goal</li>
-            </ol>
-
-          </section>
-        </section>
-
-        <section>
-          <section>
-            <h2>Working with People</h2>
-            <ol>
-              <li>Organizational Success Factors</li>
-              <li>Organizational Culture</li>
-              <li>Data-Driven Decision Making</li>
-              <li>Coding Practices</li>
-            </ol>
-          </section>
-
-					<section>
-						<h3>Organizational Success Factors</h3>
-            <ol>
-              <li>The organization widely recognizes IT as a competitive advantage to its business</li>
-              <li>The organization's leadership team recognizes IT as a competitive advantage</li>
-              <li>Clearly defined business champions lead change</li>
-              <li>Clearly defined technical champions lead change</li>
-              <li>A project with measurable business value been selected to be automatically deployed to production</li>
-              <li>There is a clear understanding of why the business is undertaking a technology transformation</li>
-            </ol>
-					</section>
-
-          <section>
-            <h3>Organizational Culture (Westrum)</h3>
-            <ol>
-              <li>Information is actively sought</li>
-              <li>Responsibilities and risks are shared</li>
-              <li>Cross-functional collaboration is encouraged and rewarded</li>
-              <li>New ideas and innovations are welcomed</li>
-              <li>Failure leads to inquiry</li>
-            </ol>
-          </section>
-
-          <section>
-            <h3>Data-Driven Decision Making</h3>
-            <ol>
-              <li>The organization has quantifiable goals</li>
-              <li>The organization's goals are visible to all of its members</li>
-              <li>Data is collected and used to make decisions</li>
-              <li>Cost and utilization are monitored</li>
-              <li>Monitoring data from pre-production environments is used to make release decisions</li>
-              <li>Monitoring provides business performance information</li>
-            </ol>
-          </section>
-
-          <section>
-          <h3>Coding Practices</h3>
-            <ol>
-              <li>Developers follow code inspection standards (rubocop, foodcritic, etc.)</li>
-              <li>Code reviews are performed and results are shared with developers</li>
-              <li>Every change is reviewed by at least two people with relevant skill and contextual knowledge</li>
-              <li>Software and automation components are shared and co-developed</li>
-              <li>Any potential contributor to a project can find its code and documentation with minimal assistance</li>
-              <li>Regularly scheduled automation demos occur</li>
-              <li>The codebase is almost always in a releasable state</li>
-            </ol>
-          </section>
-        </section>
-
-        <section>
-          <section>
-            <h2>Working with Machines</h2>
-            <ol>
-              <li>Version Control</li>
-              <li>Chef Local Development</li>
-              <li>Continuous Integration</li>
-              <li>Chef Code Deployment</li>
-              <li>Application Deployment</li>
-              <li>Continuous Delivery</li>
-              <li>Virtualization as a Service</li>
-              <li>Full-Stack Automation</li>
-              <li>Compliance Automation</li>
-              <li>Sustaining Operations Culture</li>
-            </ol>
-          </section>
-
-          <section>
-            <h3>Version Control</h3>
-            <ol>
-              <li>All source code is stored in a version control system (VCS)</li>
-              <li>All infrastructure and deployment code is stored in VCS</li>
-              <li>Developers can view projects in VCS</li>
-              <li>Developers suggest and/or provide changes to projects in VCS</li>
-              <li>Developers create new projects in VCS as needed</li>
-              <li>VCS shows who is responsible for each codebase</li>
-              <li>Code documentation is easy to write and is viewable by all with VCS access</li>
-            </ol>
-          </section>
-
-          <section>
-            <h3>Chef Local Development</h3>
-            <ol>
-              <li>Developers provision their own isolated VMs as needed</li>
-              <li>Developers use VM images that closely resemble production systems</li>
-              <li>Developers use Chef development tools (ChefDK, Vagrant, etc)</li>
-              <li>Chef development workstation setup is automated</li>
-              <li>Developers download code dependencies in a friction-free manner</li>
-              <li>Developers run unit tests (ChefSpec) locally</li>
-              <li>Developers run functional tests (ServerSpec) locally</li>
-              <li>Developers run complaince checks (InSpec) locally</li>
-              <li>Developers use Test Kitchen to verify that cookbooks work as intended</li>
-            </ol>
-          </section>
-
-          <section>
-            <h3>Continuous Integration</h3>
-            <ol>
-              <li>All projects use a CI service</li>
-              <li>The CI service automatically tests new branches</li>
-              <li>CI job templates exist for each type of software project (Chef cookbook, Java app servers, Node.js app, etc.)</li>
-              <li>CI jobs lint projects</li>
-              <li>CI jobs unit test projects</li>
-              <li>CI jobs integration test projects</li>
-              <li>CI jobs execute functional tests against projects</li>
-              <li>CI jobs verify complaince of projects</li>
-              <li>CI makes the quality of the code base highly visible</li>
-              <li>CI confirms that versions are unique</li>
-              <li>CI jobs automatically update dependencies</li>
-              <li>CI jobs use monitoring to assess each change's effect on system health</li>
-            </ol>
-          </section>
-
-          <section>
-            <h3>Chef Code Deployment</h3>
-            <ol>
-              <li>CI jobs upload cookbooks to a Chef server</li>
-              <li>Cookbook updates are only uploaded via CI</li>
-              <li>All non-cookbook Chef policy (environments, roles, data bags, etc.) is only uploaded via CI</li>
-              <li>CI jobs pin dependencies so that they cannot be modified in later deployments</li>
-              <li>CI jobs assign a set of cookbook versions to a Chef environment</li>
-              <li>Cookbook deployments are automated</li>
-              <li>Cookbook deployment automation manages the sequence of deployments</li>
-            </ol>
-          </section>
-
-          <section>
-            <h3>Application Deployment</h3>
-            <ol>
-              <li>Applications are deployed without manual intervention</li>
-              <li>Applications follow a clear promotion path (e.g., Dev -> QA -> Staging -> Production)</li>
-              <li>Application deployment automation manages the sequence of deployments (e.g.: Database schema first, then app servers)</li>
-              <li>CI jobs automatically update, pin, and test runtime dependencies of applications</li>
-              <li>Application deployment automation performs parallel, rolling, and/or canary deployments</li>
-              <li>Deployments are run during the business day without causing negative user experiences</li>
-            </ol>
-          </section>
-
-          <section>
-            <h3>Continuous Delivery</h3>
-            <ol>
-              <li>All validation and deployments are executed in a pipeline that goes from source control all the way to production</li>
-              <li>Small batches of work flow through the pipeline</li>
-              <li>Changes are released weekly, if not more frequently</li>
-              <li>Changes that pass validation are automatically released to production</li>
-            </ol>
-          </section>
-
-          <section>
-            <h3>Virtualizaton as a Service</h3>
-            <ol>
-              <li>All servers are provisioned via APIs</li>
-              <li>The API is a generally accepted API such as EC2, Azure, OpenStack, vSphere, Docker</li>
-              <li>Access restrictions allow authorized users (e.g., developers and operations) to provision resources, and deny unauthorized users</li>
-              <li>Resources are provisioned in a friction-free manner</li>
-              <li>System images are built via an automated process</li>
-              <li>System images are built from scratch or from a well known, trusted origin</li>
-              <li>System images are built in a pipeline</li>
-              <li>System images are frequently updated</li>
-            </ol>
-          </section>
-
-          <section>
-            <h3>Full-Stack Automation</h3>
-            <ol>
-              <li>Storage resources are provisioned by code</li>
-              <li>Networking resources are provisioned by code</li>
-              <li>Identity services are managed by code</li>
-              <li>DNS is configured by code</li>
-              <li>Messaging queues are provisioned by code</li>
-              <li>Security validation is performed by code</li>
-              <li>Performance validation is performed by code</li>
-              <li>The entire application is test provisioned and deployed in an alternate datacenter</li>
-            </ol>
-          </section>
-
-          <section>
-            <h3>Compliance Automation</h3>
-            <ol>
-              <li>Compliance policies are expressed in code</li>
-              <li>Compliance is checked automatically</li>
-              <li>Compliance automation removes non-compliant nodes from production upon detection</li>
-              <li>Nodes are destroyed beyond a certain age (e.g. 30 dyas)</li>
-            </ol>
-          </section>
-
-          <section>
-            <h3>Sustaining Operations Culture</h3>
-            <ol>
-              <li>Automated services stress the production system (e.g. Chaos Monkey)</li>
-              <li>Prodution alerts first notify those who wrote the code</li>
-              <li>Operations, Security, Network, Automation, Testing, and Compliance experts provide developer-friendly tools and coaching to enable development teams</li>
-            </ol>
-          </section>
-        </section>
-
-				<section>
-					<img data-src="images/chef-logo.svg" width="50%">
-				</section>
-
 			</div>
 
 		</div>
@@ -376,27 +69,63 @@
 		<script src="js/reveal.js"></script>
 
 		<script>
-
-			// Full list of configuration options available at:
+      // Full list of configuration options available at:
 			// https://github.com/hakimel/reveal.js#configuration
 			Reveal.initialize({
 				controls: true,
 				progress: true,
 				history: true,
 				center: true,
+        slideNumber: true,
 
 				transition: 'slide', // none/fade/slide/convex/concave/zoom
-
-				// Optional reveal.js plugins
-				dependencies: [
-					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
-					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
-					{ src: 'plugin/zoom-js/zoom.js', async: true },
-					{ src: 'plugin/notes/notes.js', async: true }
-				]
-			});
+        chart: {
+          defaults: { 
+            global: {
+              fontColor: "#FFF",
+              fontSize: 20, 
+              fontFamily: "'Arial'",
+              title: { fontColor: "#FFF" }, 
+              legend: {
+                labels: {
+                  padding: 20,
+                  fontColor: "#FFF"
+                }
+              }    
+            },
+            scale: { 
+              gridLines: { color: "#FFF", zeroLineColor: "#FFF" }, 
+              ticks: {
+                display: false
+              },
+              pointLabels: {
+                fontSize: 20,
+                fontColor: "#FFF"
+              }
+            } 
+          },
+          line: { borderColor: [ "rgba(20,220,220,.8)" , "rgba(220,120,120,.8)", "rgba(20,120,220,.8)" ], "borderDash": [ [5,10], [0,0] ]}, 
+          bar: { backgroundColor: [ "rgba(20,220,220,.8)" , "rgba(220,120,120,.8)", "rgba(20,120,220,.8)" ]}, 
+          pie: { backgroundColor: [ ["rgba(0,0,0,.8)" , "rgba(220,20,20,.8)", "rgba(20,220,20,.8)", "rgba(220,220,20,.8)", "rgba(20,20,220,.8)"] ]},
+          radar: { 
+            backgroundColor: ["rgba(241,139,33,0.2)", "rgba(107,178,226,0.2)"],
+            borderColor: ["rgba(241,139,33,1)", "rgba(107,178,226,1)"],
+            pointBackgroundColor: ["rgba(241,139,33,1)", "rgba(107,178,226,1)"],
+            pointBorderColor: ["rgba(241,139,33,1)", "rgba(107,178,226,1)"]
+          }   
+        },
+  			// Optional reveal.js plugins
+  			dependencies: [
+  				{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+  				{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+  				{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+  				{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+  				{ src: 'plugin/zoom-js/zoom.js', async: true },
+  				{ src: 'plugin/notes/notes.js', async: true },
+          { src: 'plugin/chart/Chart.min.js' },       
+          { src: 'plugin/chart/csv2chart.js' }
+  			]
+		  });
 
 		</script>
 

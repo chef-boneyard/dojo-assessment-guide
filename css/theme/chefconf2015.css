@@ -42,7 +42,7 @@ table .influences {
 body {
   background: #222 url("../../images/background.png") no-repeat right top;
   background-size: cover;
-  background-color: #222; }
+  background-color: #3f5364; }
 
 .reveal {
   font-family: 'Source Sans Pro', Helvetica, sans-serif;
@@ -52,7 +52,7 @@ body {
 
 ::selection {
   color: #fff;
-  background: #f9c999;
+  background: #3f5364;
   text-shadow: none; }
 
 .reveal .slides > section, .reveal .slides > section > section {

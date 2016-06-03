@@ -1,0 +1,159 @@
+##, Working with People, Current, Target
+, , , 
+1, Organizational Success Factors, , 
+1, Organizational Culture, , 
+1, Data-Driven Decision Making, , 
+1, Coding Practices, , 
+, , , 
+, , , 
+##, Organizational Success Factors, , 
+, , , 
+1, The organization widely recognizes IT as a competitive advantage to its business, 3, 3
+1, The organization's leadership team recognizes IT as a competitive advantage, 3, 4
+1, Clearly defined business champions lead change, 2, 3
+1, Clearly defined technical champions lead change, 3, 4
+1, A project with measurable business value been selected to be automatically deployed to production, 2, 2
+1, There is a clear understanding of why the business is undertaking a technology transformation, 2, 3
+, , 15, 19
+, , , 
+##, Organizational Culture (Westrum), , 
+, , , 
+1, Information is actively sought, 2, 3
+1, Responsibilities and risks are shared, 2, 3
+1, Cross-functional collaboration is encouraged and rewarded, 1, 2
+1, New ideas and innovations are welcomed, 2, 3
+1, Failure leads to inquiry, 2, 3
+, , 9, 14
+, , , 
+##, Data-Driven Decision Making, , 
+, , , 
+1, The organization has quantifiable goals, 3, 3
+1, The organization's goals are visible to all of its members, 2, 3
+1, Data is collected and used to make decisions, 2, 3
+1, Cost and utilization are monitored, 1, 2
+1, Monitoring data from pre-production environments is used to make release decisions, 0, 1
+1, Monitoring provides business performance information, 0, 1
+, , 8, 13
+, , , 
+##, Coding Practices, , 
+, , , 
+1, Developers follow code inspection standards (rubocop, foodcritic, etc.), 3, 3
+1, Code reviews are performed and results are shared with developers, 3, 3
+1, Every change is reviewed by at least two people with relevant skill and contextual knowledge, 3, 4
+1, Software and automation components are shared and co-developed, 3, 3
+1, Any potential contributor to a project can find its code and documentation with minimal assistance, 4, 4
+1, Regularly scheduled automation demos occur, 3, 3
+1, The codebase is almost always in a releasable state, 3, 3
+, , 22, 23
+, , , 
+, , , 
+##, Working with Machines, , 
+, , , 
+, , , 
+##, Version Control, , 
+, , , 
+1, All source code is stored in a version control system (VCS), 4, 4
+1, All infrastructure and deployment code is stored in VCS, 4, 4
+1, Developers can view projects in VCS, 4, 4
+1, Developers suggest and/or provide changes to projects in VCS, 4, 4
+1, Developers create new projects in VCS as needed, 4, 4
+1, VCS shows who is responsible for each codebase, 3, 3
+1, Code documentation is easy to write and is viewable by all with VCS access, 3, 4
+, , 26, 27
+, , , 
+##, Chef Local Development, , 
+, , , 
+1, Developers provision their own isolated VMs as needed, 2, 3
+1, Developers use VM images that closely resemble production systems, 2, 3
+1, Developers use Chef development tools (ChefDK, Vagrant, etc), 3, 4
+1, Chef development workstation setup is automated, 1, 2
+1, Developers download code dependencies in a friction-free manner, 2, 3
+1, Developers run unit tests (ChefSpec) locally, 2, 3
+1, Developers run functional tests (ServerSpec) locally, 2, 2
+1, Developers run complaince checks (InSpec) locally, 0, 1
+1, Developers use Test Kitchen to verify that cookbooks work as intended, 3, 3
+, , 17, 24
+, , , 
+##, Continuous Integration, , 
+, , , 
+1, All projects use a CI service, 3, 3
+1, The CI service automatically tests new branches, 2, 3
+1, CI job templates exist for each type of software project (Chef cookbook, Java app servers, Node.js app, etc.), 1, 2
+1, CI jobs lint projects, 3, 3
+1, CI jobs unit test projects, 3, 3
+1, CI jobs integration test projects, 3, 3
+1, CI jobs execute functional tests against projects, 2, 3
+1, CI jobs verify complaince of projects, 0, 1
+1, CI makes the quality of the code base highly visible, 1, 2
+1, CI confirms that versions are unique, 2, 3
+1, CI jobs automatically update dependencies, 2, 3
+1, CI jobs use monitoring to assess each change's effect on system health, 2, 3
+, , 24, 32
+, , , 
+##, Chef Code Deployment, , 
+, , , 
+1, CI jobs upload cookbooks to a Chef server, 3, 4
+1, Cookbook updates are only uploaded via CI, 3, 3
+1, All non-cookbook Chef policy (environments, roles, data bags, etc.) is only uploaded via CI, 1, 2
+1, CI jobs pin dependencies so that they cannot be modified in later deployments, 2, 3
+1, CI jobs assign a set of cookbook versions to a Chef environment, 3, 4
+1, Cookbook deployments are automated, 3, 3
+1, Cookbook deployment automation manages the sequence of deployments, 3, 3
+, , 18, 22
+, , , 
+##, Application Deployment, , 
+, , , 
+1, Applications are deployed without manual intervention, 2, 3
+1, Applications follow a clear promotion path (e.g., Dev -> QA -> Staging -> Production), 2, 3
+1, Application deployment automation manages the sequence of deployments (e.g.: Database schema first, then app servers), 3, 3
+1, CI jobs automatically update, pin, and test runtime dependencies of applications, 2, 3
+1, Application deployment automation performs parallel, rolling, and/or canary deployments, 3, 3
+1, Deployments are run during the business day without causing negative user experiences, 0, 1
+, , 12, 16
+, , , 
+##, Continuous Delivery, , 
+, , , 
+1, All validation and deployments are executed in a pipeline that goes from source control all the way to production, 3, 3
+1, Small batches of work flow through the pipeline, 1, 2
+1, Changes are released weekly, if not more frequently, 1, 2
+1, Changes that pass validation are automatically released to production, 0, 0
+, , 5, 7
+, , , 
+##, Virtualizaton as a Service, , 
+, , , 
+1, All servers are provisioned via APIs, 0, 1
+1, The API is a generally accepted API such as EC2, Azure, OpenStack, vSphere, Docker, 0, 1
+1, Access restrictions allow authorized users (e.g., developers and operations) to provision resources, and deny unauthorized users, 0, 1
+1, Resources are provisioned in a friction-free manner, 0, 1
+1, System images are built via an automated process, 1, 1
+1, System images are built from scratch or from a well known, trusted origin, 3, 3
+1, System images are built in a pipeline, 0, 1
+1, System images are frequently updated, 1, 1
+, , 5, 10
+, , , 
+##, Full-Stack Automation, , 
+, , , 
+1, Storage resources are provisioned by code, 0, 0
+1, Networking resources are provisioned by code, 1, 1
+1, Identity services are managed by code, 2, 2
+1, DNS is configured by code, 2, 2
+1, Messaging queues are provisioned by code, 2, 2
+1, Security validation is performed by code, 1, 1
+1, Performance validation is performed by code, 0, 0
+1, The entire application is test provisioned and deployed in an alternate datacenter, 0, 1
+, , 8, 9
+, , , 
+##, Compliance Automation, , 
+, , , 
+1, Compliance policies are expressed in code, 0, 1
+1, Compliance is checked automatically, 0, 1
+1, Compliance automation removes non-compliant nodes from production upon detection, 0, 1
+1, Nodes are destroyed beyond a certain age (e.g. 30 days), 1, 1
+, , 1, 4
+, , , 
+##, Sustaining Operations Culture, , 
+, , , 
+1, Automated services stress the production system (e.g. Chaos Monkey), 0, 0
+1, Prodution alerts first notify those who wrote the code, 0, 1
+1, Operations, Security, Network, Automation, Testing, and Compliance experts provide developer-friendly tools and coaching to enable development teams, 0, 1
+, , 0, 2
