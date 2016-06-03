@@ -49,4 +49,4 @@ Monitoring provides business performance information | 1 | |
 
 
 
-<img src="images/chef-logo.svg" width="50%"/>
+<img src="images/Chef_Vertical_Website_IO_Reg_Inverse.png" width="50%"/>
