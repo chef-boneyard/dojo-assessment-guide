@@ -129,8 +129,11 @@ module.exports = function(grunt) {
 				files: [ '*.html']
 			},
 			markdown: {
-				files: [ '*.md' ]
+				files: [ '*.md', 'dojo/*.md' ]
 			},
+			csv: {
+				files: [ '*.csv', 'data/*.csv']
+			}
 			options: {
 				livereload: true
 			}
