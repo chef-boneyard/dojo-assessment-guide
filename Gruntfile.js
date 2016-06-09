@@ -133,7 +133,7 @@ module.exports = function(grunt) {
 			},
 			csv: {
 				files: [ '*.csv', 'data/*.csv']
-			}
+			},
 			options: {
 				livereload: true
 			}

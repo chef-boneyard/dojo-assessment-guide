@@ -82,6 +82,7 @@
         chart: {
           defaults: { 
             global: {
+              defaultFontColor: "#FFF",
               fontColor: "#FFF",
               fontSize: 20, 
               fontFamily: "'Arial'",
@@ -91,21 +92,22 @@
                   padding: 20,
                   fontColor: "#FFF"
                 }
-              }    
-            },
-            scale: { 
-              gridLines: { color: "#FFF", zeroLineColor: "#FFF" }, 
-              ticks: {
-                display: false
               },
-              pointLabels: {
-                fontSize: 20,
+              label: {
                 fontColor: "#FFF"
-              }
-            } 
+              }    
+            }
           },
           line: { borderColor: [ "rgba(20,220,220,.8)" , "rgba(220,120,120,.8)", "rgba(20,120,220,.8)" ], "borderDash": [ [5,10], [0,0] ]}, 
-          bar: { backgroundColor: [ "rgba(20,220,220,.8)" , "rgba(220,120,120,.8)", "rgba(20,120,220,.8)" ]}, 
+          bar: { 
+            backgroundColor: ["rgba(241,139,33,0.2)", "rgba(107,178,226,0.2)"],
+            borderColor: ["rgba(241,139,33,1)", "rgba(107,178,226,1)"]
+          },
+          horizontalBar: { 
+            backgroundColor: ["rgba(241,139,33,0.2)", "rgba(107,178,226,0.2)"],
+            borderColor: ["rgba(241,139,33,1)", "rgba(107,178,226,1)"],
+            borderWidth: [2,2]
+          }, 
           pie: { backgroundColor: [ ["rgba(0,0,0,.8)" , "rgba(220,20,20,.8)", "rgba(20,220,20,.8)", "rgba(220,220,20,.8)", "rgba(20,20,220,.8)"] ]},
           radar: { 
             backgroundColor: ["rgba(241,139,33,0.2)", "rgba(107,178,226,0.2)"],
