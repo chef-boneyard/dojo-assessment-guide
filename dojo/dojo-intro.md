@@ -89,6 +89,7 @@ In order to show value quickly, you will sacrifice compeleteness. This is techic
 </canvas>
 
 
+
 # DOJO Mechanics
 
 1. Safety
