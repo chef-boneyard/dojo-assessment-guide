@@ -36,7 +36,7 @@
 - Open data/customer.xls
 - Enable Macros
 - Goto the assessment tab
-- If you want to clear the current results, click the resest button at the bottom of the sheet.
+- If you want to clear the current results, click the reset button at the bottom of the sheet.
 - When you want to refresh the Radar Chart, click "export phase report"
 - When you want to refresh the Bar Chart, click "export question report"
 
