@@ -44,12 +44,9 @@ This is a speaker note for the first slide
 
 
 # The Journey Phases
-
-Multiple phases can and should be worked on in parallel 
-
-The earlier phases evolve significantly as the journey progresses
-
-It's natural to skip or inconsistently implement certain phases, so be aware of problems this causes in the later phases
++ Multiple phases can and should be worked in parallel 
++ The earlier phases evolve significantly as the journey progresses
++ It's natural to skip or inconsistently implement certain phases, so be aware of problems this causes in the later phases
 
 Note:
 As you make progress in advanced areas, such as full-stack-automation, the scope of early phases, such as testing, expands
@@ -93,10 +90,10 @@ Monitoring provides business performance information | 1 | |
 # DOJO Mechanics
 
 1. Safety
-1. Scoping
-1. Goal Setting
-1. Our Scale
-1. Scoring
+2. Scoping
+3. Goal Setting
+4. Our Scale
+5. Scoring
 
 
 # Safety
@@ -111,15 +108,15 @@ Make sure to get explicit support for this from the most senior person in the DO
 
 We focus on a service and the people who provide it.
 
-1. Development
-1. Operations
-1. Management
-1. Architecture
-1. Testing
-1. Security
-1. Compliance
-1. Release
-1. Support
++ Development
++ Operations
++ Management
++ Architecture
++ Testing
++ Security
++ Compliance
++ Release
++ Support
 
 
 # Goal Setting
@@ -129,15 +126,11 @@ In this exercise, we want to assess your current state. After you have that, we 
 
 # Our Scale
 
-#### <p style="text-align: left;">0   Not planned</p>
----
-#### <p style="text-align: left;">1   Planned</p>
----
-#### <p style="text-align: left;">2   Inconsistently implemented in some areas</p>
----
-#### <p style="text-align: left;">3   Consistently implemented in some areas</p>
----
-#### <p style="text-align: left;">4   Consistently implemented throughout the organization</p>
++ 0 | Not planned
++ 1 | Planned
++ 2 | Inconsistently implemented in some areas
++ 3 | Consistently implemented in some areas
++ 4 | Consistently implemented throughout the organization
 
 
 # Scoring
@@ -145,7 +138,7 @@ In this exercise, we want to assess your current state. After you have that, we 
 The sections of the DOJO each have a few statements. For each section, we will follow this process:
 
 1. Individuals score each statement for current state
-1. Group shares scores
-1. Group discusses any differing scores
-1. Consenus on scores
-1. Repeat for the goal
+2. Group shares scores
+3. Group discusses any differing scores
+4. Consenus on scores
+5. Repeat for the goal
