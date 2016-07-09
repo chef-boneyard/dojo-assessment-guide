@@ -58,34 +58,6 @@ In order to show value quickly, you will sacrifice compeleteness. This is techic
 <canvas data-chart="radar" data-chart-src="data/chartExample.csv" width="500" height="300" />
 
 
-### What You Get When We Are Done
-
-Organizational Success Factors | Delta | Strategic Objectives | Tactical Objectives
---- | --- | --- | ---   
-The organization's leadership team recognizes IT as a competitive advantage | 1 | |
-Clearly defined business champions lead change | 1 | | 
-Clearly defined technical champions lead change | 1 | | 
-There is a clear understanding of why the business is undertaking a technology transformation | 1 | |
-
-
-Organizational Culture (Westrum) | Delta | Strategic Objectives | Tactical Objectives   
---- | --- | --- | ---   
-Information is actively sought | 1 | | 
-Responsibilities and risks are shared | 1 | | 
-Cross-functional collaboration is encouraged and rewarded | 1 | | 
-New ideas and innovations are welcomed | 1 | |
-Failure leads to inquiry | 1 | |
-
-
-Data-Driven Decision Making | Delta |    Strategic Objectives   |     Tactical Objectives
---- | --- | --- | ---   
-The organization's goals are visible to all of its members | 1 | | 
-Data is collected and used to make decisions | 1 | |
-Cost and utilization are monitored | 1 | | 
-Monitoring data from pre-production environments is used to make release decisions | 1 | | 
-Monitoring provides business performance information | 1 | |
-
-
 
 # DOJO Mechanics
 
@@ -139,6 +111,5 @@ The sections of the DOJO each have a few statements. For each section, we will f
 
 1. Individuals score each statement for current state
 2. Group shares scores
-3. Group discusses any differing scores
-4. Consenus on scores
-5. Repeat for the goal
+3. Group discusses differing scores
+5. Repeat for goals
