@@ -30,6 +30,11 @@ This is a speaker note for the first slide
 1. Working with People
 1. Working with Machines
 
+Note:
+talk about journey abstract  
+how we do dojo  
+ground rules
+
 
 
 # The DevOps Journey
@@ -42,6 +47,12 @@ This is a speaker note for the first slide
 <!-- Insert revised Journey Map picture -->
 ![alt text](images/journey_map.png)
 
+Note:
+Orange - working with people (done in parallel)  
+Blue - working with Machines (done in order)
+
+You can make great progress in working with machines, but unless you make progress in working with people, you can't susstain it.
+
 
 # The Journey Phases
 + Multiple phases can and should be worked in parallel 
@@ -49,8 +60,9 @@ This is a speaker note for the first slide
 + It's natural to skip or inconsistently implement certain phases, so be aware of problems this causes in the later phases
 
 Note:
-As you make progress in advanced areas, such as full-stack-automation, the scope of early phases, such as testing, expands
-In order to show value quickly, you will sacrifice compeleteness. This is techical debt. Be aware that as you try to improve your system, you will need to go back and clean up. Revisiting is good!
+As you make progress in advanced areas, such as full-stack-automation, the scope of early phases, such as testing, expands  
+In order to show value quickly, you will sacrifice compeleteness. This is techical debt. Be aware that as you try to improve your system, you will need to go back and clean up.  
+Revisiting is good!
 
 
 ### What You Get When We Are Done
@@ -84,6 +96,9 @@ In order to show value quickly, you will sacrifice compeleteness. This is techic
 }
 -->
 </canvas>
+
+Note:
+This bar chart calculates the top areas where you are looking to gain efficencies.
 
 
 
@@ -123,6 +138,9 @@ We focus on a service and the people who provide it.
 
 In this exercise, we want to assess your current state. After you have that, we want you to agree to a six month goal.
 
+Note:
+We will remind them throughout the assesement that this isn't a "I would like us to be here in 6 months", but rather "we WILL get here in 6 months"
+
 
 # Our Scale
 
@@ -131,6 +149,9 @@ In this exercise, we want to assess your current state. After you have that, we 
 + 2 | Inconsistently implemented in some areas
 + 3 | Consistently implemented in some areas
 + 4 | Consistently implemented throughout the organization
+
+Note:
+Great idea to have someone in the room copy this to a whiteboard.
 
 
 # Scoring
@@ -142,3 +163,6 @@ The sections of the DOJO each have a few statements. For each section, we will f
 3. Group discusses any differing scores
 4. Consenus on scores
 5. Repeat for the goal
+
+Note:
+This follows the agile process of (story sizing or planning poker )
