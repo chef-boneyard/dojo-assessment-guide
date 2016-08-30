@@ -30,6 +30,11 @@ This is a speaker note for the first slide
 3. Working with People
 4. Working with Machines
 
+Note:
+talk about journey abstract  
+how we do dojo  
+ground rules
+
 
 
 # The DevOps Journey
@@ -42,6 +47,12 @@ This is a speaker note for the first slide
 <!-- Insert revised Journey Map picture -->
 ![alt text](images/journey_map.png)
 
+Note:
+Orange - working with people (done in parallel)  
+Blue - working with Machines (done in order)
+
+You can make great progress in working with machines, but unless you make progress in working with people, you can't susstain it.
+
 
 # The Journey Phases
 + Multiple phases can and should be worked in parallel 
@@ -50,40 +61,44 @@ This is a speaker note for the first slide
 
 Note:
 As you make progress in advanced areas, such as full-stack-automation, the scope of early phases, such as testing, expands
-In order to show value quickly, you will sacrifice compeleteness. This is technical debt. Be aware that as you try to improve your system, you will need to go back and clean up. Revisiting is good!
+In order to show value quickly, you will sacrifice completeness. This is technical debt. Be aware that as you try to improve your system, you will need to go back and clean up.
+Revisiting is good!
 
 
 ### What You Get When We Are Done
 <!-- Show a completed DOJO sample spider graph -->
-<canvas data-chart="radar" data-chart-src="data/chartExample.csv" width="500" height="300" />
+<canvas data-chart="radar" data-chart-src="data/phase-report-example.csv" width="500" height="300">
+<!--
+{
+"options": { "scale": { 
+               "gridLines": { "color": "#FFF", "zeroLineColor": "#FFF" }, 
+               "ticks": { "display": false }, 
+               "pointLabels": { "fontSize": "16", "fontColor": "#FFF" }
+             }
+}            
+}
+-->
+</canvas>
 
 
 ### What You Get When We Are Done
+<!-- Show a completed DOJO sample spider graph -->
+<canvas data-chart="horizontalBar" data-chart-src="data/question-report-example.csv" width="500" height="300">
+<!-- 
+{
+"options": { 
+  "responsive": true, 
+  "scales": { 
+    "xAxes": [{ "stacked": false }], "yAxes": [{ "stacked": true }]   
+  },
+  "label": { "fontColor": "#FFF" } 
+}
+}
+-->
+</canvas>
 
-Organizational Success Factors | Delta | Strategic Objectives | Tactical Objectives
---- | --- | --- | ---   
-The organization's leadership team recognizes IT as a competitive advantage | 1 | |
-Clearly defined business champions lead change | 1 | | 
-Clearly defined technical champions lead change | 1 | | 
-There is a clear understanding of why the business is undertaking a technology transformation | 1 | |
-
-
-Organizational Culture (Westrum) | Delta | Strategic Objectives | Tactical Objectives   
---- | --- | --- | ---   
-Information is actively sought | 1 | | 
-Responsibilities and risks are shared | 1 | | 
-Cross-functional collaboration is encouraged and rewarded | 1 | | 
-New ideas and innovations are welcomed | 1 | |
-Failure leads to inquiry | 1 | |
-
-
-Data-Driven Decision Making | Delta |    Strategic Objectives   |     Tactical Objectives
---- | --- | --- | ---   
-The organization's goals are visible to all of its members | 1 | | 
-Data is collected and used to make decisions | 1 | |
-Cost and utilization are monitored | 1 | | 
-Monitoring data from pre-production environments is used to make release decisions | 1 | | 
-Monitoring provides business performance information | 1 | |
+Note:
+This bar chart calculates the top areas where you are looking to gain efficencies.
 
 
 
@@ -123,6 +138,9 @@ We focus on a service and the people who provide it.
 
 In this exercise, we want to assess your current state. After you have that, we want you to agree to a six month goal.
 
+Note:
+We will remind them throughout the assesement that this isn't a "I would like us to be here in 6 months", but rather "we WILL get here in 6 months"
+
 
 # Our Scale
 
@@ -131,6 +149,9 @@ In this exercise, we want to assess your current state. After you have that, we 
 + 2 | Inconsistently implemented in some areas
 + 3 | Consistently implemented in some areas
 + 4 | Consistently implemented throughout the organization
+
+Note:
+Great idea to have someone in the room copy this to a whiteboard.
 
 
 # Scoring
@@ -142,3 +163,6 @@ The sections of the DOJO each have a few statements. For each section, we will f
 3. Group discusses any differing scores
 4. Consenus on scores
 5. Repeat for the goal
+
+Note:
+This follows the agile process of (story sizing or planning poker )
