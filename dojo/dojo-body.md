@@ -140,7 +140,7 @@ Q6. inconsistent means, not too much work or guesses involved into finding out t
 1. Developers download code dependencies in a friction-free manner
 1. Developers run unit tests (ChefSpec) locally
 1. Developers run functional tests (ServerSpec) locally
-1. Developers run complaince checks (InSpec) locally
+1. Developers run compliance checks (InSpec) locally
 1. Developers use Test Kitchen to verify that cookbooks work as intended
 
 
@@ -153,7 +153,7 @@ Q6. inconsistent means, not too much work or guesses involved into finding out t
 5. CI jobs unit test projects
 6. CI jobs integration test projects
 7. CI jobs execute functional tests against projects
-8. CI jobs verify complaince of projects
+8. CI jobs verify compliance of projects
 9. CI makes the quality of the code base highly visible
 1. CI confirms that versions are unique
 1. CI jobs automatically update dependencies
