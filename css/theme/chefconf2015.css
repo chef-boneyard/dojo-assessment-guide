@@ -40,7 +40,7 @@ table .influences {
  * GLOBAL STYLES
  *********************************************/
 body {
-  background: #222 url("../../images/background.png") no-repeat right top;
+  background: #222 no-repeat right top;
   background-size: cover;
   background-color: #3f5364; }
 
