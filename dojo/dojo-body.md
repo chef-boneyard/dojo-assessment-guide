@@ -150,4 +150,3 @@ Q4 is the "Continuous Deployment" vs. "Continuous Delivery" clarifying question
 
 1. Automated services stress the production system (e.g. Chaos Monkey)
 1. Prodution alerts first notify those who wrote the code
-1. Operations, Security, Network, Automation, Testing, and Compliance experts provide developer-friendly tools and coaching to enable development teams
