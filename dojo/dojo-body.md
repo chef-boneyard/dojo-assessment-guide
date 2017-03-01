@@ -127,7 +127,6 @@ Note:
 1. All servers are provisioned via APIs
 1. Resources are provisioned in a friction-free manner
 1. System images are built via an automated process
-1. System images are built from scratch or from a well known, trusted origin
 1. System images are built in a pipeline
 1. System images are frequently updated
 
