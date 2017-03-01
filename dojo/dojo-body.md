@@ -119,7 +119,7 @@ Canary - deploy this thing to x% of my nodes (eg: Netflix - first to 1 node, the
 4. Changes that pass validation are automatically released to production
 
 Note:
-Q4 is the "Continuous Deployment" vs. "Continuous Delivery" clarifying question
+"Automatically released to production" is the distinction between "Continuous Deployment" vs. "Continuous Delivery"
 
 
 ## Virtualizaton as a Service
