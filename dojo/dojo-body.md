@@ -103,18 +103,18 @@ Functional (as it applies to applications) - has to do with how the system is ex
 ## Application Deployment
 
 1. Applications are deployed without manual intervention
-2. Applications follow a clear promotion path (e.g., Dev -> QA -> Staging -> Production)
-3. Application deployment automation manages the sequence of deployments (e.g.: Database schema first, then app servers)
-4. CI jobs automatically update, pin, and test runtime dependencies of applications
-5. Application deployment automation performs parallel, rolling, and/or canary deployments
+1. Applications follow a clear promotion path (e.g., Dev -> QA -> Staging -> Production)
+1. Application deployment automation manages the sequence of deployments (e.g.: Database schema first, then app servers)
+1. CI jobs automatically update, pin, and test runtime dependencies of applications
+1. Application deployment automation performs parallel, rolling, and/or canary deployments
 1. Deployments are run during the business day without causing negative user experiences
 
 Note:
+Approval of a deployment is not considered manual intervention.
 Q5. Can you deploy automatically with minimal impact/downtime.  
-Blue/Green satisfies this.  
-Rolling - 7 nodes in LB, pull one out, deploy, put it back.  
-Ranary - deploy this thing to x% of my nodes  
-Ex: Netflix - first to 1 node, then 1%, then x%, then everywhere.
+Paralles is also known as Blue/Green
+Rolling - 7 nodes in LB, pull one out, deploy, verify, put it back, repeat.  
+Canary - deploy this thing to x% of my nodes (eg: Netflix - first to 1 node, then 1%, then x%, then everywhere.)
 
 
 ## Continuous Delivery
