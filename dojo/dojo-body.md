@@ -17,67 +17,7 @@
 -->
 ## Working with People
 
-1. Organizational Success Factors
-1. Organizational Culture
-1. Data-Driven Decision Making
 1. Coding Practices
-
-
-## Organizational Success Factors
-
-1. The organization widely recognizes IT as a competitive advantage to its business
-2. The organization's leadership team recognizes IT as a competitive advantage
-3. Clearly defined business champions lead change
-4. Clearly defined technical champions lead change
-5. A project with measurable business value been selected to be automatically deployed to production
-6. There is a clear understanding of why the business is undertaking a technology transformation
-
-Note:
-Do people even talk about it?  
-Do folk talk about it as something that needs to happen... (rating of 1)  
-Q5 - Typically this is the people in the room.  
-How many projects does your team run?  
-How many projects do you plan on automating all the way to production?
-
-
-## Organizational Culture (Westrum)
-
-1. Information is actively sought
-1. Responsibilities and risks are shared
-1. Cross-functional collaboration is encouraged and rewarded
-1. New ideas and innovations are welcomed
-1. Failure leads to inquiry
-
-Note:
-Q1 - "i don't know what to do here" - what does that lead to?  
-Do you wait until PM shows up and asks questions?  
-If folks have difficulty here, may be helpful to show them slides 5/6 from Westrum presentation:
-https://docs.google.com/presentation/d/1vf-HqnSZOqr3aW9dWyhgxqVEHkpA81efLiiORCcaPXs/edit#slide=id.p10 
-
-
-## Data-Driven Decision Making
-
-1. The organization has quantifiable goals
-2. The organization's goals are visible to all of its members
-3. Data is collected and used to make decisions
-4. Cost and utilization are monitored
-5. Monitoring data from pre-production environments is used to make release decisions
-6. Monitoring provides business performance information
-
-Note:
-Q1 Example: Chef has ARR goals which are shared with all employees.  
-Alaska air has on-time departures and time to open door.  
-Q2: Chefs CEO shares the numbers, what's good, and what's bad.  
-Q3: Whatever data team decides. Splunk, etc..  
-Example: Nike - some teams collect a ton of data, but no one is looking at it.  
-Tiny scale data - how many story points were delivered, how many will be delivered.
-Q4: Ex: EC2 costs - what's spent and where, people time (burnout/overtime) etc..  
-Q6: (very hard)  
-Dashboard showing revenue flowing through the system.  
-Revenue per server, revenue per commit.  
-Technical accomplishments are a means to an end (you may be doing best tech practices), but does it move the needle for the business.  
-Amazon has an ability to allow any developer to publish code to production to a limit set of servers, and monitor how that affects business compared to the rest of the environment.  
-New relic show all business values for a time in a quarter.
 
 
 ## Coding Practices
