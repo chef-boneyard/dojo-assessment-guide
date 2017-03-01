@@ -79,17 +79,12 @@ Q6. inconsistent means, not too much work or guesses involved into finding out t
 ## Continuous Integration
 
 1. All projects use a CI service
-2. The CI service automatically tests new branches
-3. CI job templates exist for each type of software project (Chef cookbook, Java app servers, Node.js app, etc.)
-4. CI jobs lint projects
-5. CI jobs unit test projects
-6. CI jobs integration test projects
-7. CI jobs execute functional tests against projects
-8. CI jobs verify complaince of projects
-9. CI makes the quality of the code base highly visible
-1. CI confirms that versions are unique
-1. CI jobs automatically update dependencies
-1. CI jobs use monitoring to assess each change's effect on system health
+1. CI job templates exist for each type of software project (Chef cookbook, Java app servers, Node.js app, etc.)
+1. CI jobs lint projects
+1. CI jobs unit test projects
+1. CI jobs integration test projects
+1. CI jobs execute functional tests against projects
+1. CI jobs verify complaince of projects
 
 Note:
 Q2. May not be a goal for you (if everyone commits straight to master.)  
