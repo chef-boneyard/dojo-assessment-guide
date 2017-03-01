@@ -145,12 +145,6 @@ Q4 is the "Continuous Deployment" vs. "Continuous Delivery" clarifying question
 3. Compliance automation removes non-compliant nodes from production upon detection
 4. Nodes are destroyed beyond a certain age (e.g. 30 days)
 
-Note:
-Q4. Ex: Ooyala uses spot instances, so they get nuked randomly. (or whenever new EC2 base image comes out)  
-Capital one - 60 day auto destroy policy  
-Nike - 7 days auto destroy  
-Poodle got auto fixed in prod while PMs were debating what to do due to 7-day auto destroy policy.  
-
 
 ## Sustaining Operations Culture
 
