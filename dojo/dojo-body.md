@@ -131,18 +131,11 @@ Q4 is the "Continuous Deployment" vs. "Continuous Delivery" clarifying question
 ## Virtualizaton as a Service
 
 1. All servers are provisioned via APIs
-2. The API is a generally accepted API such as EC2, Azure, OpenStack, vSphere, Docker
-1. Access restrictions allow authorized users (e.g., developers and operations) to provision resources, and deny unauthorized users
 1. Resources are provisioned in a friction-free manner
 1. System images are built via an automated process
 1. System images are built from scratch or from a well known, trusted origin
 1. System images are built in a pipeline
 1. System images are frequently updated
-
-Note:
-Q2. Ex: Dell api wrapper around all cloud providers (instradeous) - always returns zero instantly, regardless of actual outcome  
-Must return actionable info (json or something else)  
-Unless you're google, homegrown api will most likely not cut it.  
 
 
 ## Full-Stack Automation
