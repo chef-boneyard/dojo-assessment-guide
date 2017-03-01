@@ -61,9 +61,7 @@ Keeps you from spending 5 months building something that no one but you cares/kn
 
 Note:
 Scope of access, may include security, compliance, testing, operations.  
-Q2. For example, all of your cookbooks are in VCS, but you have to create data_bags by hand.  
-Q6. inconsistent means, not too much work or guesses involved into finding out the owner (commits done by root/jenkins are annotated)  
-- Github commiters page, or cookbook metadata.md is updated.
+For example, all of your cookbooks are in VCS, but you have to create data_bags by hand.  
 
 
 ## Chef Local Development
@@ -87,11 +85,8 @@ Q6. inconsistent means, not too much work or guesses involved into finding out t
 1. CI jobs verify complaince of projects
 
 Note:
-Q2. May not be a goal for you (if everyone commits straight to master.)  
-Q4. Rubocop (for chef cookbooks)  
-Q6. Intergration (as it applies to applications) - old school java - have db layer. Java code calls DB directly w/o api, so you're testing that functionaltiy. Ex: create record. (create throw away db, and throw away data, or pretend to write something)  
-Q7. Functional (as it applies to applications) - has to do with how the system is expected to be used. From the perspective of the end user (or if a service, does the API behave as expected)  
-Q9. If any of the tests fail, job fails.  Show show what actually failed.  
+Intergration (as it applies to applications) - old school java - have db layer. Java code calls DB directly w/o api, so you're testing that functionaltiy. Ex: create record. (create throw away db, and throw away data, or pretend to write something)  
+Functional (as it applies to applications) - has to do with how the system is expected to be used. From the perspective of the end user (or if a service, does the API behave as expected)  
 
 
 ## Chef Code Deployment
