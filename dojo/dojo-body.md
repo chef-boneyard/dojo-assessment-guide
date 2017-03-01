@@ -100,7 +100,6 @@ Functional (as it applies to applications) - has to do with how the system is ex
 1. Applications are deployed without manual intervention
 1. Applications follow a clear promotion path (e.g., Dev -> QA -> Staging -> Production)
 1. Application deployment automation manages the sequence of deployments (e.g.: Database schema first, then app servers)
-1. CI jobs automatically update, pin, and test runtime dependencies of applications
 1. Application deployment automation performs parallel, rolling, and/or canary deployments
 1. Deployments are run during the business day without causing negative user experiences
 
