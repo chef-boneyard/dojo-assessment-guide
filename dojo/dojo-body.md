@@ -69,12 +69,9 @@ Q6. inconsistent means, not too much work or guesses involved into finding out t
 ## Chef Local Development
 
 1. Developers provision their own isolated VMs as needed
-1. Developers use VM images that closely resemble production systems
 1. Developers use Chef development tools (ChefDK, Vagrant, etc)
-1. Chef development workstation setup is automated
 1. Developers download code dependencies in a friction-free manner
 1. Developers run unit tests (ChefSpec) locally
-1. Developers run functional tests (ServerSpec) locally
 1. Developers run complaince checks (InSpec) locally
 1. Developers use Test Kitchen to verify that cookbooks work as intended
 
