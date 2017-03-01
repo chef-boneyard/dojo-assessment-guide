@@ -58,11 +58,6 @@ Keeps you from spending 5 months building something that no one but you cares/kn
 
 1. All source code is stored in a version control system (VCS)
 2. All infrastructure and deployment code is stored in VCS
-3. Developers can view projects in VCS
-4. Developers suggest and/or provide changes to projects in VCS
-5. Developers create new projects in VCS as needed
-6. VCS shows who is responsible for each codebase
-1. Code documentation is easy to write and is viewable by all with VCS access
 
 Note:
 Scope of access, may include security, compliance, testing, operations.  
