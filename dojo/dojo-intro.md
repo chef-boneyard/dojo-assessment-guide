@@ -26,9 +26,9 @@ This is a speaker note for the first slide
 
 # Agenda
 1. The DevOps Journey
-1. DOJO Mechanics
-1. Working with People
-1. Working with Machines
+2. DOJO Mechanics
+3. Working with People
+4. Working with Machines
 
 Note:
 talk about journey abstract  
@@ -39,8 +39,8 @@ ground rules
 
 # The DevOps Journey
 1. DevOps Journey Map
-1. The Journey Phases
-1. What You Get When We Are Done
+2. The Journey Phases
+3. What You Get When We Are Done
 
 
 # DevOps Journey Map
@@ -60,8 +60,8 @@ You can make great progress in working with machines, but unless you make progre
 + It's natural to skip or inconsistently implement certain phases, so be aware of problems this causes in the later phases
 
 Note:
-As you make progress in advanced areas, such as full-stack-automation, the scope of early phases, such as testing, expands  
-In order to show value quickly, you will sacrifice compeleteness. This is techical debt. Be aware that as you try to improve your system, you will need to go back and clean up.  
+As you make progress in advanced areas, such as full-stack-automation, the scope of early phases, such as testing, expands
+In order to show value quickly, you will sacrifice completeness. This is technical debt. Be aware that as you try to improve your system, you will need to go back and clean up.
 Revisiting is good!
 
 
