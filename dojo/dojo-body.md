@@ -138,18 +138,6 @@ Q4 is the "Continuous Deployment" vs. "Continuous Delivery" clarifying question
 1. System images are frequently updated
 
 
-## Full-Stack Automation
-
-1. Storage resources are provisioned by code
-1. Networking resources are provisioned by code
-1. Identity services are managed by code
-1. DNS is configured by code
-1. Messaging queues are provisioned by code
-1. Security validation is performed by code
-1. Performance validation is performed by code
-1. The entire application is test provisioned and deployed in an alternate datacenter
-
-
 ## Compliance Automation
 
 1. Compliance policies are expressed in code
