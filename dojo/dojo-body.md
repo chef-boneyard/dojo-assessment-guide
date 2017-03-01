@@ -22,7 +22,6 @@
 
 ## Coding Practices
 
-2. Code reviews are performed and results are shared with developers
 3. Every change is reviewed by at least two people with relevant skill and contextual knowledge
 4. Software and automation components are shared and co-developed
 5. Any potential contributor to a project can find its code and documentation with minimal assistance
