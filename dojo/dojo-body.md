@@ -22,19 +22,16 @@
 
 ## Coding Practices
 
-3. Every change is reviewed by at least two people with relevant skill and contextual knowledge
-4. Software and automation components are shared and co-developed
-5. Any potential contributor to a project can find its code and documentation with minimal assistance
-6. Regularly scheduled automation demos occur
-7. The codebase is almost always in a releasable state
+1. Every change is reviewed by at least two people with relevant skill and contextual knowledge
+1. Software and automation components are shared and co-developed
+1. Any potential contributor to a project can find its code and documentation with minimal assistance
+1. Regularly scheduled automation demos occur
+1. The codebase is almost always in a releasable state
 
 Note:
-Q2. results are shared (because w/o it, it's meaningless)  
-Q3. person who wrote it plus one other (pair or mob programming is ok). At chef we have 2 people in addition to the writer.  
-Q4. No Brents - Do you have that one person who you have to call to get the particular piece deployed.  
+No Brents - Do you have that one person who you have to call to get the particular piece deployed.  
 How many peieces of technology does only one person know about?  
-Q6. Why what you did matters (what you did is clever, but why did you do it?)  Encourages collaboration. Practice speaking and presenting to business.  
-Keeps you from spending 5 months building something that no one but you cares/knows about
+Demos keep you from spending 5 months building something that no one but you cares/knows about
 
 
 
