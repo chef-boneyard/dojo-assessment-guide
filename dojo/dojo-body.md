@@ -105,7 +105,7 @@ Functional (as it applies to applications) - has to do with how the system is ex
 
 Note:
 Approval of a deployment is not considered manual intervention.
-Q5. Can you deploy automatically with minimal impact/downtime.  
+Can you deploy automatically with minimal impact/downtime.  
 Paralles is also known as Blue/Green
 Rolling - 7 nodes in LB, pull one out, deploy, verify, put it back, repeat.  
 Canary - deploy this thing to x% of my nodes (eg: Netflix - first to 1 node, then 1%, then x%, then everywhere.)
