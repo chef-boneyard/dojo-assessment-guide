@@ -149,12 +149,5 @@ Q4 is the "Continuous Deployment" vs. "Continuous Delivery" clarifying question
 ## Sustaining Operations Culture
 
 1. Automated services stress the production system (e.g. Chaos Monkey)
-2. Prodution alerts first notify those who wrote the code
-3. Operations, Security, Network, Automation, Testing, and Compliance experts provide developer-friendly tools and coaching to enable development teams
-
-Note:
-"Secretly the 5th culture slide"  
-Big tech - silicone valley giants, Facebook/Google/Netflix/etc... their best practices are here to inspire best practices  
-Q1. stress lab would be considered partially implemented  
-Q2. you build it, you run it  
-- if you have NOC that's a failure (speak about why)
+1. Prodution alerts first notify those who wrote the code
+1. Operations, Security, Network, Automation, Testing, and Compliance experts provide developer-friendly tools and coaching to enable development teams
