@@ -134,10 +134,10 @@ Note:
 ## Compliance Automation
 
 1. Compliance policies are expressed in code
-2. Compliance is checked automatically
-2. Changes are checked for compliance before release
-3. Compliance automation removes non-compliant nodes from production upon detection
-4. Nodes are destroyed beyond a certain age (e.g. 30 days)
+1. Compliance is checked automatically
+1. Changes are checked for compliance before release
+1. Compliance automation removes non-compliant nodes from production upon detection
+1. Nodes are destroyed beyond a certain age (e.g. 30 days)
 
 
 ## Sustaining Operations Culture
