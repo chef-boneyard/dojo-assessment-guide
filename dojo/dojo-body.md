@@ -15,9 +15,18 @@
 # limitations under the License.
 #
 -->
-## Working with People
+## Topics
 
 1. Coding Practices
+1. Version Control
+1. Chef Local Development
+1. Continuous Integration
+1. Chef Code Deployment
+1. Application Deployment
+1. Continuous Delivery
+1. Virtualization as a Service
+1. Compliance Automation
+1. Sustaining Operations Culture
 
 
 ## Coding Practices
@@ -32,21 +41,6 @@ Note:
 No Brents - Do you have that one person who you have to call to get the particular piece deployed.  
 How many peieces of technology does only one person know about?  
 Demos keep you from spending 5 months building something that no one but you cares/knows about
-
-
-
-## Working with Machines
-
-1. Version Control
-1. Chef Local Development
-1. Continuous Integration
-1. Chef Code Deployment
-1. Application Deployment
-1. Continuous Delivery
-1. Virtualization as a Service
-1. Full-Stack Automation
-1. Compliance Automation
-1. Sustaining Operations Culture
 
 
 ## Version Control
