@@ -137,4 +137,4 @@ Note:
 ## Sustaining Operations Culture
 
 1. Automated services stress the production system (e.g. Chaos Monkey)
-1. Prodution alerts first notify those who wrote the code
+1. Production alerts first notify those who wrote the code
