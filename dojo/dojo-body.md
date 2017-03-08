@@ -59,7 +59,7 @@ For example, all of your cookbooks are in VCS, but you have to create data_bags 
 1. Developers use Chef development tools (ChefDK, Vagrant, etc)
 1. Developers download code dependencies in a friction-free manner
 1. Developers run unit tests (ChefSpec) locally
-1. Developers run complaince checks (InSpec) locally
+1. Developers run compliance checks (InSpec) locally
 1. Developers use Test Kitchen to verify that cookbooks work as intended
 
 
@@ -71,7 +71,7 @@ For example, all of your cookbooks are in VCS, but you have to create data_bags 
 1. CI jobs unit test projects
 1. CI jobs integration test projects
 1. CI jobs execute functional tests against projects
-1. CI jobs verify complaince of projects
+1. CI jobs verify compliance of projects
 
 Note:
 Intergration (as it applies to applications) - old school java - have db layer. Java code calls DB directly w/o api, so you're testing that functionaltiy. Ex: create record. (create throw away db, and throw away data, or pretend to write something)  
