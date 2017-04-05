@@ -1089,6 +1089,16 @@ Some reveal.js features, like external Markdown and speaker notes, require that 
 
    You can change the port by using `grunt serve --port 8001`.
 
+### Upgrade
+Each project has package.json file.
+This file contains locked versions of all packages the project depends on.
+The easiest way to upgrade the packages is to take a look at stackoverflow:
+http://stackoverflow.com/questions/16073603/how-do-i-update-each-dependency-in-package-json-to-the-latest-version
+
+* npm install -g npm-check-updates
+* npm-check-updates -u
+* npm install
+* npm start to make sure your project works as expected.
 
 ### Folder Structure
 - **css/** Core styles without which the project does not function
