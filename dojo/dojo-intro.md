@@ -24,99 +24,18 @@ This is a speaker note for the first slide
 
 
 
-# Agenda
-1. The DevOps Journey
-2. DOJO Mechanics
-3. Working with People
-4. Working with Machines
+# Before We Get Started
 
-Note:
-talk about journey abstract  
-how we do dojo  
-ground rules
-
-
-
-# The DevOps Journey
-1. DevOps Journey Map
-2. The Journey Phases
-3. What You Get When We Are Done
-
-
-# DevOps Journey Map
-<!-- Insert revised Journey Map picture -->
-![alt text](images/journey_map.png)
-
-Note:
-Orange - working with people (done in parallel)  
-Blue - working with Machines (done in order)
-
-You can make great progress in working with machines, but unless you make progress in working with people, you can't susstain it.
-
-
-# The Journey Phases
-+ Multiple phases can and should be worked in parallel 
-+ The earlier phases evolve significantly as the journey progresses
-+ It's natural to skip or inconsistently implement certain phases, so be aware of problems this causes in the later phases
-
-Note:
-As you make progress in advanced areas, such as full-stack-automation, the scope of early phases, such as testing, expands
-In order to show value quickly, you will sacrifice completeness. This is technical debt. Be aware that as you try to improve your system, you will need to go back and clean up.
-Revisiting is good!
-
-
-### What You Get When We Are Done
-<!-- Show a completed DOJO sample spider graph -->
-<canvas data-chart="radar" data-chart-src="data/phase-report-example.csv" width="500" height="300">
-<!--
-{
-"options": { "scale": { 
-               "gridLines": { "color": "#FFF", "zeroLineColor": "#FFF" }, 
-               "ticks": { "display": false }, 
-               "pointLabels": { "fontSize": "16", "fontColor": "#FFF" }
-             }
-}            
-}
--->
-</canvas>
-
-
-### What You Get When We Are Done
-<!-- Show a completed DOJO sample spider graph -->
-<canvas data-chart="horizontalBar" data-chart-src="data/question-report-example.csv" width="500" height="300">
-<!-- 
-{
-"options": { 
-  "responsive": true, 
-  "scales": { 
-    "xAxes": [{ "stacked": false }], "yAxes": [{ "stacked": true }]   
-  },
-  "label": { "fontColor": "#FFF" } 
-}
-}
--->
-</canvas>
-
-Note:
-This bar chart calculates the top areas where you are looking to gain efficencies.
-
-
-
-# DOJO Mechanics
-
-1. Safety
+1. Purpose
 2. Scoping
 3. Goal Setting
 4. Our Scale
 5. Scoring
 
 
-# Safety
+# Purpose
 
-This is a safe space. All of you should feel free to share openly and honestly without repercussions.
-
-Note:
-Make sure to get explicit support for this from the most senior person in the DOJO.
+We need a shared view of where we are and a shared destination 
 
 
 # Scoping
